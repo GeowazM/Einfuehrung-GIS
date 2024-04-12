@@ -34,7 +34,7 @@ Analog die Schritte für jedes Kartenblatt wiederholen.
 
 Schaut hier auch nochmal in [diese Issue](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/issues/6) falls euer Grid nicht korrekt angezeigt wird.
 
-Fehler beim Einfügen des Grids können außerdem auftreten, wenn vorher falsch umprojeziert wurde, siehe [Projektionen](/exercise_1/daten_in_qgis/qgis-Projektionen.md).
+Fehler beim Einfügen des Grids können außerdem auftreten, wenn vorher falsch umprojeziert wurde, siehe [Projektionen](/content/gis/exercise_1s/exercise_1/daten_in_qgis/qgis-Projektionen.md).
 
 ### Übersichtskarte / 2. Kartenfeld
 <video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_map_add_overview_map.mp4"></video>

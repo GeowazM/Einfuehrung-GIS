@@ -39,8 +39,8 @@ Bitte beschränkt euch zwecks Problemlösungen auf diese beiden Wege der Kommuni
 ## Anleitung zum Erstellen eines Issues  
 **Checkliste:**  
 Bevor ihr ein neues Issue verfasst, vergewissert euch erneut alle Punkte auf folgender Checkliste erfüllt zu haben:  
-* Es wird eine [vom Wiki empfohlene Version](/allgemeines/qgis-Installation) von QGIS verwendet.
-* Alle [Hinweise](/allgemeines/Hinweise) wurden berücksichtigt.
+* Es wird eine [vom Wiki empfohlene Version](/content/gis/allgemeines/qgis-Installation) von QGIS verwendet.
+* Alle [Hinweise](/content/gis/allgemeines/Hinweise) wurden berücksichtigt.
 * Das Problem ist nicht in den [häufigen Fragen](home-Häufige Fragen und Fehlerquellen) zu finden und alle darin genannten Fehlerquellen wurden überprüft.
 * Alle Wiki-Artikel zu dem jeweiligen Themengebiet wurden gelesen (Die Themengebiete sind immer der Exercise zugeordnet in denen sie zuerst verwendet wurden).
 * Es wurde sich zum Zeitpunkt des Verfassens des Issues erneut vergewissert, dass nicht bereits ein Issue zur bestehenden Problematik existiert (Nur die Überschriften scannen ist nicht ausreichend! Es müssen mindestens die Inhalte aller Issues zur jeweiligen Exercise/Abgabe inspiziert werden.).
@@ -71,7 +71,7 @@ Bevor ihr euer Issue absendet, könnt ihr euch in der Preview das derzeitige Lay
 
 * Beim Eintippen des Titels ist im Video zu sehen, dass Issues mit ähnlichen Titeln angezeigt werden. Dies bietet einem erneut die Möglichkeit Themendopplungen zu vermeiden.
 * Die Beschreibung im Beispiel ist sehr minimalistisch. In diesem Fall geht das in Ordnung, da eine Fehlermeldung als Screenshot zur Verfügung gestellt werden konnte, sowie der Zeitpunkt des Auftretens dieser Fehlermeldung genau bestimmt ist.
-* Aufmerksame Leser der [Hinweise](/allgemeines/Hinweise) können zudem feststellen, dass das Erstellen des Issues nicht gerechtfertigt ist, da die Befolgung des Hinweises zu [GRASS Anwendungen](/allgemeines/Hinweise.md#grass-anwendungen) das Problem bereits beheben würde.
+* Aufmerksame Leser der [Hinweise](/content/gis/allgemeines/Hinweise) können zudem feststellen, dass das Erstellen des Issues nicht gerechtfertigt ist, da die Befolgung des Hinweises zu [GRASS Anwendungen](/content/gis/allgemeines/allgemeines/Hinweise.md#grass-anwendungen) das Problem bereits beheben würde.
 
 ## Nach erfolgreicher Problemlösung
 Solltet ihr für euer Problem eine Lösung gefunden haben (entweder selbstständig oder durch eine Antwort in eurem Issue), dann teilt diese Lösung unbedingt als neuen Kommentar in eurem Issue mit. Dadurch können KommilitonInnen mit dem gleichen Problem sofort nachlesen, welcher Lösungsweg funktioniert hat. Gleichzeitig dient euer Kommentar mit dem Lösungsweg auch als Feedback für die TutorInnen, dass ein Issue vollständig behoben wurde und somit geschlossen werden kann.  

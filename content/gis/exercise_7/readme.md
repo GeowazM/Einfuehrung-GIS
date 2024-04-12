@@ -7,10 +7,10 @@
 * ein Höhenprofil erstellen
 
 ## Wiki:
-* [Rasterdaten in Vektordaten umwandeln](/exercise_7/qgis-Konvertierung)
-* [fokale Rasteroperationen](/exercise_7/qgis-Fokale-Funktionen)
-* [zonale Rasteroperationen](/exercise_7/qgis-Zonale-Funktionen)
-* [weitere Rasteroperationen](/exercise_7/qgis-Weitere-Rasterfunktionen)
+* [Rasterdaten in Vektordaten umwandeln](/content/gis/exercise_7/qgis-Konvertierung)
+* [fokale Rasteroperationen](/content/gis/exercise_7/qgis-Fokale-Funktionen)
+* [zonale Rasteroperationen](/content/gis/exercise_7/qgis-Zonale-Funktionen)
+* [weitere Rasteroperationen](/content/gis/exercise_7/qgis-Weitere-Rasterfunktionen)
 
 ## Daten
 Ladet euch [die Daten herunter](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/raw/master/exercise_07/exercise_07_data.zip) und speichert sie auf eurem PC. Legt einen lokalen Ordner (nicht auf einem Netzlaufwerk wie zum Beispiel "Q://Abgabe") an und speichert dort die obigen Daten. (.zip Ordner müssen vorher entpackt werden.)

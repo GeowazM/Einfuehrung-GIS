@@ -5,19 +5,19 @@
 * (2) Erste Schritte mit Layern + Kartengestaltung
 
 ## Wiki
-* [Installation](/allgemeines/qgis-Installation.md)
-* [Hinweise zur Verwendung von GIS-Software](/allgemeines/Hinweise.md)
-* [Was tun bei Problemen?](/allgemeines/home-Probleme.md)
-* [Grundlegende Einstellungen](/exercise_1/arbeiten_mit_qgis/home-Grundlegende_Einstellungen.md)
-* [Benutzeroberfläche anpassen](/exercise_1/arbeiten_mit_qgis/qgis_Interface.md)
-* [Datenorganisation](/exercise_1/arbeiten_mit_qgis/home-Datenorganisation.md)
-* [Geodatenformate](/exercise_1/arbeiten_mit_qgis/home-Geodatenformate)
-* [Layer-Konzept kennenlernen](/exercise_1/daten_in_qgis/qgis-Layer-Konzept.md)
-* [Interface](/exercise_1/arbeiten_mit_qgis/qgis-Interface.md)
-* [Attributdaten](/exercise_1/daten_in_qgis/qgis-Attributdaten)
-* [Projektionen](/exercise_1/daten_in_qgis/qgis-Projektionen)
-* [Vektorsignaturen](/exercise_1/visualisierung/qgis-Vektorsignaturen)
-* [Kartengestaltung](/exercise_1/visualisierung/qgis-Kartengestaltung)
+* [Installation](/content/gis/allgemeines/qgis-Installation.md)
+* [Hinweise zur Verwendung von GIS-Software](/content/gis/allgemeines/Hinweise.md)
+* [Was tun bei Problemen?](/content/gis/allgemeines/home-Probleme.md)
+* [Grundlegende Einstellungen](/content/gis/exercise_1/arbeiten_mit_qgis/home-Grundlegende_Einstellungen.md)
+* [Benutzeroberfläche anpassen](/content/gis/exercise_1/arbeiten_mit_qgis/qgis_Interface.md)
+* [Datenorganisation](/content/gis/exercise_1s/exercise_1/arbeiten_mit_qgis/home-Datenorganisation.md)
+* [Geodatenformate](/content/gis/exercise_1/arbeiten_mit_qgis/home-Geodatenformate)
+* [Layer-Konzept kennenlernen](/content/gis/exercise_1s/exercise_1/daten_in_qgis/qgis-Layer-Konzept.md)
+* [Interface](/content/gis/exercise_1s/exercise_1/arbeiten_mit_qgis/qgis-Interface.md)
+* [Attributdaten](/content/gis/exercise_1/daten_in_qgis/qgis-Attributdaten)
+* [Projektionen](/content/gis/exercise_1/daten_in_qgis/qgis-Projektionen)
+* [Vektorsignaturen](/content/gis/exercise_1/visualisierung/qgis-Vektorsignaturen)
+* [Kartengestaltung](/content/gis/exercise_1/visualisierung/qgis-Kartengestaltung)
 
 ## Daten
 Ladet euch [die Daten herunter](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/raw/master/exercise_01/exercise_01_data.zip) und speichert sie auf eurem PC. Legt einen lokalen Ordner (nicht auf einem Netzlaufwerk wie zum Beispiel "Q://Abgabe") an und speichert dort die obigen Daten. (.zip Ordner müssen vorher entpackt werden.)
@@ -34,14 +34,14 @@ Ladet euch [die Daten herunter](https://courses.gistools.geog.uni-heidelberg.de/
 
 2. Verschafft euch einen Überblick über die beste Vorgehensweise bei [Problemen](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/home-Probleme), die in der Arbeit mit GIS auftreten können: ***Wiki*** (in dem Informationen und Erklärvideos zu allen behandelten Themenbereichen gesammelt sind), und ***Issues*** (in denen Fragen gestellt und Probleme besprochen werden können)
 
-3. Macht euch mit dem Thema [Datenorganisation](/exercise_1/arbeiten_mit_qgis/home-Datenorganisation) vertraut und erstellt eine geeigntete Ordnerstruktur, mit der ihr im kommenden Semester arbeiten könnt.
+3. Macht euch mit dem Thema [Datenorganisation](/content/gis/exercise_1/arbeiten_mit_qgis/home-Datenorganisation) vertraut und erstellt eine geeigntete Ordnerstruktur, mit der ihr im kommenden Semester arbeiten könnt.
 
-4. Informiert euch über verschiedene [Geodatenformate](/exercise_1/arbeiten_mit_qgis/home-Geodatenformate).
+4. Informiert euch über verschiedene [Geodatenformate](/content/gis/exercise_1/arbeiten_mit_qgis/home-Geodatenformate).
 
-5. Entscheidet euch für ein GIS-Programm (***ArcGIS*** oder ***QGIS*** – Was sind Vor- und Nachteile der beiden Programme?) und beginnt den Download-Prozess unter Beachtung der Hinweise zur [Installation](/allgemeines/qgis-Installation).
+5. Entscheidet euch für ein GIS-Programm (***ArcGIS*** oder ***QGIS*** – Was sind Vor- und Nachteile der beiden Programme?) und beginnt den Download-Prozess unter Beachtung der Hinweise zur [Installation](/content/gis/allgemeines/qgis-Installation).
    Hinweis zu den Programmen: das Wiki zu QGIS ist sehr viel ausführlicher und aktueller, zudem können euch nicht alle Tutor*innen bei Problemen in ArcGIS unterstützten. Als Anfänger*innen ist die Nutzung von QGIS zu empfehlen.
 
-6. Öffnet euer GIS und nehmt erste [Einstellungen](/exercise_1/arbeiten_mit_qgis/home-Grundlegende-Einstellungen) in eurem GIS nach den Empfehlungen im Wiki vor (ändert zum Beispiel die Sprache).
+6. Öffnet euer GIS und nehmt erste [Einstellungen](/content/gis/exercise_1/arbeiten_mit_qgis/home-Grundlegende-Einstellungen) in eurem GIS nach den Empfehlungen im Wiki vor (ändert zum Beispiel die Sprache).
 
 ## Aufgabenteil 2 - Verständnis und Nutzung von GIS-Programmen
 1. Öffnet die oben angegebenen Dateien im GIS. Ladet dazu die Vektor-Layer in euer Programm.
@@ -85,7 +85,7 @@ Ladet euch [die Daten herunter](https://courses.gistools.geog.uni-heidelberg.de/
 
   </details>
 
-7. Wählt für das Punkt-Layer, sowie Linien-Layer passende [Signaturen](/exercise_1/visualisierung/qgis-Vektorsignaturen)
+7. Wählt für das Punkt-Layer, sowie Linien-Layer passende [Signaturen](/content/gis/exercise_1/visualisierung/qgis-Vektorsignaturen)
 
 <details>
   <summary>Lösung</summary>
@@ -123,7 +123,7 @@ Ladet euch [die Daten herunter](https://courses.gistools.geog.uni-heidelberg.de/
 
 10. Ändert das Koordinatenbezugssystem (Projektion) eurer Ansicht auf ein für Deutschland passenderes.
 
-11. Erstellt eine neue Druckzusammenstellung. Nutzt das Format A4 (Querformat) für eure Karte([siehe hier](/exercise_1/visualisierung/qgis-Kartengestaltung))
+11. Erstellt eine neue Druckzusammenstellung. Nutzt das Format A4 (Querformat) für eure Karte([siehe hier](/content/gis/exercise_1/visualisierung/qgis-Kartengestaltung))
 
 <details>
   <summary>Lösung</summary>

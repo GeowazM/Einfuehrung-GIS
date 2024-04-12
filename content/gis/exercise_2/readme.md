@@ -5,9 +5,9 @@
 * Geometrieoperationen nutzen (z.B. die Fläche eines Polygons berechnen).
 
 ## Wiki:
-* [Nicht-Räumliche Abfragen](/exercise_2/qgis-Nicht-Räumliche-Abfragen)
-* [Räumliche Abfragen](/exercise_2/qgis-Räumliche-Abfragen)
-* [Geometrieoperationen](/exercise_2/qgis-Geometrieoperationen)
+* [Nicht-Räumliche Abfragen](/content/gis/exercise_2/qgis-Nicht-Räumliche-Abfragen)
+* [Räumliche Abfragen](/content/gis/exercise_2/qgis-Räumliche-Abfragen)
+* [Geometrieoperationen](/content/gis/exercise_2/qgis-Geometrieoperationen)
 
 ## Daten
 Ladet euch [die Daten herunter](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/raw/master/exercise_02/exercise_02_data.zip) und speichert sie auf eurem PC.

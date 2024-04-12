@@ -7,11 +7,11 @@
 * Lokale Rasteroperationen anwenden (z.B. NDVI berechnen)
 
 ## Wiki:
-* [Rasterdaten im GIS öffnen und kennenlernen](/exercise_6/qgis-Layer-Konzept)
-* [Darstellung von Rasterdaten](/exercise_6/qgis-Rasterdarstellung)
-* [Vektordaten in Rasterdaten umwandeln](/exercise_6/qgis-Konvertierung)
-* [Globale Rasteroperationen](/exercise_6/qgis-Globale-Funktionen)
-* [Lokale Rasteroperationen](/exercise_6/qgis-Lokale-Funktionen)
+* [Rasterdaten im GIS öffnen und kennenlernen](/content/gis/exercise_6/qgis-Layer-Konzept)
+* [Darstellung von Rasterdaten](/content/gis/exercise_6/qgis-Rasterdarstellung)
+* [Vektordaten in Rasterdaten umwandeln](/content/gis/exercise_6/qgis-Konvertierung)
+* [Globale Rasteroperationen](/content/gis/exercise_6/qgis-Globale-Funktionen)
+* [Lokale Rasteroperationen](/content/gis/exercise_6/qgis-Lokale-Funktionen)
 
 ## Daten
 Ladet euch [die Daten herunter](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/raw/master/exercise_06/exercise_06_data.zip) und speichert sie auf eurem PC. Legt einen lokalen Ordner (nicht auf einem Netzlaufwerk wie zum Beispiel "Q://Abgabe") an und speichert dort die obigen Daten. (.zip Ordner müssen vorher entpackt werden.)

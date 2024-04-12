@@ -3,7 +3,7 @@
 * Workflows automatisieren
 
 ## Wiki:
-* [Automatisierung](/exercise_9/qgis-Automatisierung)
+* [Automatisierung](/content/gis/exercise_9/qgis-Automatisierung)
 
 
 ## Daten

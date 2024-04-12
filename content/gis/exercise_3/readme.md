@@ -6,10 +6,10 @@
 * Tabellenfunktionen nutzen und einfache Statistiken erstellen.
 
 ## Wiki:
-* [Geometrieoperationen](/exercise_3/qgis-Geometrieoperationen)
-* [Räumliche Verschneidungen](/exercise_3/qgis-Räumliche-Verschneidungen)
-* [Räumliche Joins](/exercise_3/qgis-Räumliche-Joins)
-* [Tabellenfunktionen](/exercise_3/qgis-Tabellenfunktionen)
+* [Geometrieoperationen](/content/gis/exercise_3/qgis-Geometrieoperationen)
+* [Räumliche Verschneidungen](/content/gis/exercise_3/qgis-Räumliche-Verschneidungen)
+* [Räumliche Joins](/content/gis/exercise_3/qgis-Räumliche-Joins)
+* [Tabellenfunktionen](/content/gis/exercise_3/qgis-Tabellenfunktionen)
 
 ## Daten
 Ladet euch [die Daten herunter](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/raw/master/exercise_03/exercise_03_data.zip) und speichert sie auf eurem PC. Legt einen lokalen Ordner (nicht auf einem Netzlaufwerk wie zum Beispiel "Q://Abgabe") an und speichert dort die obigen Daten. (.zip Ordner müssen vorher entpackt werden.)

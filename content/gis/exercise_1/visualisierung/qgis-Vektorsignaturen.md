@@ -3,7 +3,7 @@ Die kartographische Darstellung von Vektor-Layern im GIS ist ein weites und komp
 
 **Hinweis:**  
 Die getätigten Veränderungen bei der Darstellung eines Layers werden nur lokal in eurer Projektdatei gespeichert und nicht in der Layer-Datei direkt. Wird die Layer-Datei also außerhalb eures Projektes geöffnet (zum Beispiel wenn ihr sie als Teil einer Abgabe in Moodle hochgeladen habt), sind die Darstellungseinstellungen verloren.  
-Ihr könnt die Darstellung jedoch getrennt als Datei abspeichern (siehe [Signaturen speichern und laden](/exercise_1/visualisierung/qgis-Vektorsignaturen.md#signaturen-speichern-und-laden)). Für die Abgaben empfehlen sich aber stattdessen Screenshots in der Dokumentation.
+Ihr könnt die Darstellung jedoch getrennt als Datei abspeichern (siehe [Signaturen speichern und laden](/content/gis/exercise_1s/exercise_1/visualisierung/qgis-Vektorsignaturen.md#signaturen-speichern-und-laden)). Für die Abgaben empfehlen sich aber stattdessen Screenshots in der Dokumentation.
 
 ## Single Symbol
 * alle Features im Layer werden auf die gleiche Art und Weise (Farbe, Größe, etc.) dargestellt

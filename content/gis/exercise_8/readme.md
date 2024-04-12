@@ -4,8 +4,8 @@
 * Rasterfunktionen vertiefen
 
 ## Wiki:
-* [Räumliche Interpolationsverfahren](/exercise_8/qgis-Räumliche-Interpolationsverfahren)
-* [lokale Rasterfunktionen](/exercise_6/qgis-Konvertierung)
+* [Räumliche Interpolationsverfahren](/content/gis/exercise_8/qgis-Räumliche-Interpolationsverfahren)
+* [lokale Rasterfunktionen](/content/gis/exercise_6/qgis-Konvertierung)
 
 
 ## Daten
