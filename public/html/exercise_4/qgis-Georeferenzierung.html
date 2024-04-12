@@ -1,0 +1,735 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Georeferenzierung &#8212; QGIS-Book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'exercise_4/qgis-Georeferenzierung';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Übung 4" href="readme.html" />
+    <link rel="prev" title="Digitalisierung" href="qgis-Digitalisierung.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/gis-logo.svg" class="logo__image only-light" alt="QGIS-Book - Home"/>
+    <script>document.write(`<img src="../_static/gis-logo.svg" class="logo__image only-dark" alt="QGIS-Book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    GIS Einführung
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Allgemeines</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../allgemeines/Geodatenbeschaffung.html">Geodatenbeschaffung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../allgemeines/qgis-Installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../allgemeines/Hinweise.html">Hinweise zur Verwendung von GIS-Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../allgemeines/home-Probleme.html">Was tun bei Problemen?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../allgemeines/home-H%C3%A4ufige-Fragen-und-Fehlerquellen.html">Häufige Fragen und Fehlerquellen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../allgemeines/How-to-Abgabe.html">Hinweise</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../allgemeines/Geoformate.html">Geoformate</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercise 1</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../exercise_1/arbeiten_mit_qgis/qgis-Interface.html">Benutzeroberfläche anpassen</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../exercise_1/arbeiten_mit_qgis/home-Datenorganisation.html">Datenorganisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_1/arbeiten_mit_qgis/home-Geodatenformate.html">Geodatenformate</a></li>
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../exercise_1/daten_in_qgis/qgis-Attributdaten.html">Attributdaten</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_1/daten_in_qgis/qgis-Layer-Konzept.html">Layer-Konzept</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../exercise_1/daten_in_qgis/qgis-Projektionen.html">Projektionen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_1/visualisierung/qgis-Kartengestaltung.html">Kartengestaltung</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="../exercise_1/visualisierung/qgis-Vektorsignaturen.html">Vektorsignaturen</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../exercise_1/readme.html">Exercise 01</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercise 2</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../exercise_2/qgis-Nicht-R%C3%A4umliche-Abfragen.html">Nicht-Räumliche Abfragen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_2/qgis-R%C3%A4umliche-Abfragen.html">Räumliche Abfragen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_2/qgis-Geometrieoperationen.html">Geometrieoperationen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_2/readme.html">Übung 2</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercise 3</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../exercise_3/qgis-R%C3%A4umliche-Verschneidungen.html">Räumliche Verschneidungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_3/qgis-Nicht-R%C3%A4umliche-Joins.html">Nicht-Räumliche Joins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_3/qgis-R%C3%A4umliche-Joins.html">Räumliche Joins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_3/qgis-Tabellenfunktionen.html">Tabellenfunktionen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_3/readme.html">Übung 3</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercise 4</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="qgis-Basemaps.html">Basemaps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qgis-Digitalisierung.html">Digitalisierung</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Georeferenzierung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Übung 4</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercise 5</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../exercise_5/home-OSM-Grundlagen.html">OSM Grundlagen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_5/home-OSM-Daten-herunterladen.html">OSM Daten herunterladen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_5/readme.html">Übung 5</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercise 6</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../exercise_6/qgis-Rasterdarstellung.html">Darstellung von Rasterdaten</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_6/qgis-Konvertierung.html">Raster-Vektor Konvertierung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_6/qgis-Globale-Funktionen.html">Globale Rasteroperationen und Sonstige Funktionen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_6/qgis-Lokale-Funktionen.html">Lokale Rasteroperationen</a></li>
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../exercise_6/readme.html">Übung 6</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercise 7</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../exercise_7/qgis-Fokale-Funktionen.html">Fokale Rasteroperationen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_7/qgis-Zonale-Funktionen.html">Zonale Rasteroperationen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_7/qgis-Weitere-Rasterfunktionen.html">Weitere Rasterfunktionen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_7/readme.html">Übung 7</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercise 8</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../exercise_8/qgis-R%C3%A4umliche-Interpolationsverfahren.html">Räumliche Interpolationsverfahren</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_8/readme.html">Übung 8</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercise 9</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../exercise_9/qgis-Automatisierung.html">Automatisierung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_9/readme.html">Übung 9</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-gitlab"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-gitlab"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/issues/new?issue[title]=Issue%20on%20page%20%2Fexercise_4/qgis-Georeferenzierung.html&issue[description]=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/exercise_4/qgis-Georeferenzierung.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Georeferenzierung</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wichtiges-zur-georeferenzierung">Wichtiges zur Georeferenzierung</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vorgehen-in-qgis">Vorgehen in QGIS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bild-offnen-und-zielprojektion-festlegen">Bild öffnen und Zielprojektion festlegen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transformationseinstellungen">Transformationseinstellungen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#passpunkte-setzen-und-speichern">Passpunkte setzen und speichern</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#georeferenziertes-bild-speichern">Georeferenziertes Bild speichern</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weitere-ressourcen">Weitere Ressourcen:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#allgemeine-fehlerhinweise">Allgemeine Fehlerhinweise</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="georeferenzierung">
+<h1>Georeferenzierung<a class="headerlink" href="#georeferenzierung" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><em>Raster &gt;&gt; Georeferenzierung</em> (ggfs. Erweiterung GDAL-Georeferenzierung installieren)</p></li>
+</ul>
+<section id="wichtiges-zur-georeferenzierung">
+<h2>Wichtiges zur Georeferenzierung<a class="headerlink" href="#wichtiges-zur-georeferenzierung" title="Link to this heading">#</a></h2>
+<p>Ziel der Georeferenzierung ist es, einen Geodatensatz ohne Realwelt-Koordinaten anhand von Referenzdaten mit Realweltkoordinaten so zu übersetzten, dass danach ein räumlicher Bezug hergestellt ist. Dabei wird das Koordinatensystem des zu georeferenzierenden Geodatensatzes anhand von Passpunkten modifiziert: mithilfe von Rotation(Drehung), Translation(Verschiebung) und Skalierung(Dehnung/Stauchung) und ggf. Entzerrung wird der Geodatensatz räumlich verortet.</p>
+<p>Wichtig für die Übung sind zwei Methoden:</p>
+<ol class="arabic simple">
+<li><p>Georeferenzieren auf Grundlage einer analogen Karte:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Bedingungen:</p>
+<ul>
+<li><p>KNE muss bekannt sein</p></li>
+<li><p>Mindestens 4 Koordinatenpunkte müssen bekannt sein</p></li>
+<li><p>Pixelwerte müssen auf Meterangaben skaliert werden</p></li>
+</ul>
+</li>
+<li><p>als Passpunkte werden die Schnittpunkte vom Gitternetz des zugrundeliegenes KNE verwendet</p></li>
+<li><p>Vorteil: Schnittpunkte genau in Karte ablesbar und damit Passpunkte präzise setzbar</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Georeferenzieren auf Grundlage eines Luftbilds:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Passpunkte wählen anhand von gut verortbaren Orten in den beiden Datensätzen</p></li>
+</ul>
+<p>Zentral für die Georeferenzierung sind Passpunkte, anhand derer von QGIS eine Regression vorgenommen wird. Die Genauigkeit der Georeferenzierung steht und fällt daher mit der Genauigkeit der Passpunkte. Die gewählten Passpunkte sollten daher drei Eigenschaften erfüllen – sie sollten</p>
+<ul class="simple">
+<li><p>ausreichend viele sein (→ Mindestanzahl der Passpunkte erfüllen→RMS-Fehler bestimmbar)</p></li>
+<li><p>gut verteilt sein (→ je näher zusammen, desto weniger aussagekräftig der RMS-Fehler für Genauigkeit der Georeferenzierung)</p></li>
+<li><p>möglichst gut zu verorten sein (→ exaktere Übereinstimmung der Passpunkte)</p></li>
+</ul>
+<p>Je nachdem, wie gut diese Eigenschaften erfüllt sind, wirkt sich dies auf die Genauigkeit der Übersetzung aus. Diese wird von QGIS durch den RMS-Fehler berechnet – je niedriger dieser ist, desto genauer die Georeferenzierung, sofern die obigen Bedingungen erfüllt sind.</p>
+</section>
+<section id="vorgehen-in-qgis">
+<h2>Vorgehen in QGIS<a class="headerlink" href="#vorgehen-in-qgis" title="Link to this heading">#</a></h2>
+<p>Reihenfolge in der Regel:</p>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="#qgis-Georeferenzierung#bild-%C3%B6ffnen-und-zielprojektion-festlegen"><span class="xref myst">nicht-georeferenziertes Bild öffnen</span></a></p></li>
+<li><p><a class="reference internal" href="#qgis-Georeferenzierung#bild-%C3%B6ffnen-und-zielprojektion-festlegen"><span class="xref myst">Zielprojektion festlegen</span></a></p></li>
+<li><p><a class="reference internal" href="#qgis-Georeferenzierung#transformationseinstellungen"><span class="xref myst">Transformationseinstellungen wählen</span></a></p></li>
+<li><p><a class="reference internal" href="#qgis-Georeferenzierung#passpunkte-setzen-und-speichern"><span class="xref myst">Passpunkte setzen</span></a></p></li>
+<li><p><a class="reference internal" href="#qgis-Georeferenzierung#passpunkte-setzen-und-speichern"><span class="xref myst">Passpunkte speichern</span></a></p></li>
+<li><p><a class="reference internal" href="#qgis-Georeferenzierung#georeferenziertes-bild-speichern"><span class="xref myst">Georeferenziertes Bild speichern</span></a></p></li>
+<li><p>Georeferenzierung überprüfen</p></li>
+</ol>
+<ul class="simple">
+<li><p><a class="reference internal" href="#qgis-Georeferenzierung#weitere-ressourcen"><span class="xref myst">Weitere Ressourcen</span></a></p></li>
+<li><p><a class="reference internal" href="#qgis-Georeferenzierung#allgemeine-fehlerhinweise"><span class="xref myst">Allgemeine Fehlerhinweise</span></a></p></li>
+</ul>
+</section>
+<section id="bild-offnen-und-zielprojektion-festlegen">
+<h2>Bild öffnen und Zielprojektion festlegen<a class="headerlink" href="#bild-offnen-und-zielprojektion-festlegen" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Raster einladen und auf Nachfrage die Zielprojektion festlegen</p></li>
+</ul>
+<p><video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_georeference_set_projection.mp4"></video></p>
+<p><strong>Hinweis:</strong>
+Wenn das Programm die Zielprojektion nicht von alleine abfragt, müssen die Einstellungen zu den KBS geändert werden.
+Das funktioniert unter <em>Einstellungen/Settings</em> in den Toolbars, <em>Optionen/Options</em> und dann unter dem Reiter <em>KBS/CRS</em>. In diesem muss unter <em>KBS für neue Layer/CRS for new layers</em> die Option <em>KBS abfragen/Prompt for CRS</em> gewählt werden.</p>
+<p><img alt="Einstellungen_KBS-abfragen" src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/d5872200508a16e8cd9f0a8f678566fc/Einstellungen_KBS-abfragen.png" /><img alt="Einstellungen_KBS-abfragen_01" src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/bf065093109e2512911bfa9d77e3f77a/Einstellungen_KBS-abfragen_01.png" /></p>
+</section>
+<section id="transformationseinstellungen">
+<h2>Transformationseinstellungen<a class="headerlink" href="#transformationseinstellungen" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Koordinatentransformation wählen</p></li>
+<li><p>Resampling Methode wählen</p></li>
+<li><p>Output-Pfad wählen</p></li>
+</ul>
+<p><video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_georeference_transformation_settings.mp4"></video></p>
+<p><strong>Praktische Hinweise:</strong></p>
+<ul class="simple">
+<li><p>wenn das Raster nur gedreht, skaliert und verschoben werden muss <em>Polynom 1. Grades</em></p></li>
+<li><p>wenn das Raster gekrümmt oder gebeugt werden muss <em>Polynom 2. oder 3. Grades</em></p></li>
+<li><p>Für die Zahl der Passpunkte gilt:</p>
+<ul>
+<li><p>Min. Zahl Passpunkte 𝑚=(((𝑡+1)(𝑡+2)))/2   (t = Grad d. Transformation)</p></li>
+<li><p>Das mathematisch „beste“ Modell wird erreicht, wenn exakt die erforderliche Zahl m verwendet wird (RMS-Fehler = 0)</p></li>
+<li><p>Geographisch bessere Ergebnisse werden erzielt, wenn leicht mehr Punkte gesetzt werden, Grund: Punkte werden nicht perfekt gesetzt</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="passpunkte-setzen-und-speichern">
+<h2>Passpunkte setzen und speichern<a class="headerlink" href="#passpunkte-setzen-und-speichern" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Passpunkte sollten gleichmäßig verteilt sein, da sonst eine lokal fehlerhafte Transformation droht</p></li>
+<li><p>Passpunkte sollten so präzise wie möglich platziert werden</p></li>
+<li><p>Lieber mäßig viele gute Punkte, als viele schlecht platzierte!</p></li>
+</ul>
+<p><video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_georeference_set_points_grid.mp4"></video></p>
+<ul class="simple">
+<li><p>Passpunktkoordinaten im Kartengrid ablesen und eintragen</p></li>
+</ul>
+<p><video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_georeference_set_points_from_layer.mp4"></video></p>
+<ul class="simple">
+<li><p>Passpunktkoordinaten anhand eines anderen Layers wählen</p></li>
+</ul>
+</section>
+<section id="georeferenziertes-bild-speichern">
+<h2>Georeferenziertes Bild speichern<a class="headerlink" href="#georeferenziertes-bild-speichern" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Bild speichern</p></li>
+<li><p>Datei öffnen und Georeferenzierung überprüfen</p></li>
+<li><p>in unserem Beispiel zeigt das Ergebnis eine unterschiedliche Güte für verschiedene Regionen (z.B. relativ gut im zentralen Teil, weniger gut in Nord- und Südamerika)</p></li>
+</ul>
+<p><video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_georeference_save.mp4"></video></p>
+</section>
+<section id="weitere-ressourcen">
+<h2>Weitere Ressourcen:<a class="headerlink" href="#weitere-ressourcen" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="http://de.digital-geography.com/QGIS-tutorial-teil-1-wie-georeferenziere-ich-eine-gescannte-karte-mit-QGIS/">Digital Geography Tutorial: wie georeferenziere ich eine gescannte Karte in QGIS?</a></p></li>
+</ul>
+</section>
+<section id="allgemeine-fehlerhinweise">
+<h2>Allgemeine Fehlerhinweise<a class="headerlink" href="#allgemeine-fehlerhinweise" title="Link to this heading">#</a></h2>
+<p>Fehler können unter anderem zu Stande kommen durch:</p>
+<ul class="simple">
+<li><p>fehlerhaftes Ablesen der Koordinaten (beim Ablesen von Passpunktkoordinaten im Kartengrid)</p></li>
+<li><p>eine fehlende Übereinstimmung zwischen Projekt-KBS, KBS des georeferenzierten Layers und übrigen Layern vor Beginn des Georeferenzieren</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./exercise_4"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="qgis-Digitalisierung.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Digitalisierung</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="readme.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Übung 4</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wichtiges-zur-georeferenzierung">Wichtiges zur Georeferenzierung</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vorgehen-in-qgis">Vorgehen in QGIS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bild-offnen-und-zielprojektion-festlegen">Bild öffnen und Zielprojektion festlegen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transformationseinstellungen">Transformationseinstellungen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#passpunkte-setzen-und-speichern">Passpunkte setzen und speichern</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#georeferenziertes-bild-speichern">Georeferenziertes Bild speichern</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weitere-ressourcen">Weitere Ressourcen:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#allgemeine-fehlerhinweise">Allgemeine Fehlerhinweise</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By GIScience Heidelberg
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

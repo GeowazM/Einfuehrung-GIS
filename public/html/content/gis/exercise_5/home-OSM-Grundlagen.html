@@ -1,0 +1,776 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>OSM Grundlagen &#8212; QGIS-Book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/gis/exercise_5/home-OSM-Grundlagen';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="OSM Daten herunterladen" href="home-OSM-Daten-herunterladen.html" />
+    <link rel="prev" title="Übung 4" href="../exercise_4/readme.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/gis-logo.svg" class="logo__image only-light" alt="QGIS-Book - Home"/>
+    <script>document.write(`<img src="../../../_static/gis-logo.svg" class="logo__image only-dark" alt="QGIS-Book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../../intro.html">
+                    GIS Einführung
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Allgemeines</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../allgemeines/Geodatenbeschaffung.html">Geodatenbeschaffung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../allgemeines/qgis-Installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../allgemeines/Hinweise.html">Hinweise zur Verwendung von GIS-Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../allgemeines/home-Probleme.html">Was tun bei Problemen?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../allgemeines/home-H%C3%A4ufige-Fragen-und-Fehlerquellen.html">Häufige Fragen und Fehlerquellen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../allgemeines/How-to-Abgabe.html">Hinweise</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../allgemeines/Geoformate.html">Geoformate</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercise 1</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../exercise_1/arbeiten_mit_qgis/qgis-Interface.html">Benutzeroberfläche anpassen</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../exercise_1/arbeiten_mit_qgis/home-Datenorganisation.html">Datenorganisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_1/arbeiten_mit_qgis/home-Geodatenformate.html">Geodatenformate</a></li>
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../exercise_1/daten_in_qgis/qgis-Attributdaten.html">Attributdaten</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_1/daten_in_qgis/qgis-Layer-Konzept.html">Layer-Konzept</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../exercise_1/daten_in_qgis/qgis-Projektionen.html">Projektionen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_1/visualisierung/qgis-Kartengestaltung.html">Kartengestaltung</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="../exercise_1/visualisierung/qgis-Vektorsignaturen.html">Vektorsignaturen</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../exercise_1/readme.html">Exercise 01</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercise 2</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../exercise_2/qgis-Nicht-R%C3%A4umliche-Abfragen.html">Nicht-Räumliche Abfragen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_2/qgis-R%C3%A4umliche-Abfragen.html">Räumliche Abfragen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_2/qgis-Geometrieoperationen.html">Geometrieoperationen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_2/readme.html">Übung 2</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercise 3</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../exercise_3/qgis-R%C3%A4umliche-Verschneidungen.html">Räumliche Verschneidungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_3/qgis-Nicht-R%C3%A4umliche-Joins.html">Nicht-Räumliche Joins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_3/qgis-R%C3%A4umliche-Joins.html">Räumliche Joins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_3/qgis-Tabellenfunktionen.html">Tabellenfunktionen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_3/readme.html">Übung 3</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercise 4</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../exercise_4/qgis-Basemaps.html">Basemaps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_4/qgis-Digitalisierung.html">Digitalisierung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_4/qgis-Georeferenzierung.html">Georeferenzierung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_4/readme.html">Übung 4</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercise 5</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">OSM Grundlagen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="home-OSM-Daten-herunterladen.html">OSM Daten herunterladen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Übung 5</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercise 6</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../exercise_6/qgis-Rasterdarstellung.html">Darstellung von Rasterdaten</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_6/qgis-Konvertierung.html">Raster-Vektor Konvertierung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_6/qgis-Globale-Funktionen.html">Globale Rasteroperationen und Sonstige Funktionen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_6/qgis-Lokale-Funktionen.html">Lokale Rasteroperationen</a></li>
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../exercise_6/readme.html">Übung 6</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercise 7</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../exercise_7/qgis-Fokale-Funktionen.html">Fokale Rasteroperationen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_7/qgis-Zonale-Funktionen.html">Zonale Rasteroperationen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_7/qgis-Weitere-Rasterfunktionen.html">Weitere Rasterfunktionen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_7/readme.html">Übung 7</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercise 8</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../exercise_8/qgis-R%C3%A4umliche-Interpolationsverfahren.html">Räumliche Interpolationsverfahren</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_8/readme.html">Übung 8</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercise 9</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../exercise_9/qgis-Automatisierung.html">Automatisierung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_9/readme.html">Übung 9</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-gitlab"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-gitlab"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/issues/new?issue[title]=Issue%20on%20page%20%2Fcontent/gis/exercise_5/home-OSM-Grundlagen.html&issue[description]=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/content/gis/exercise_5/home-OSM-Grundlagen.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>OSM Grundlagen</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#osm-account-anlegen">OSM-Account anlegen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-osm-mappen">In OSM mappen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#punkte">Punkte</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linien">Linien</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flachen">Flächen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#attribute-von-osm-objekten-anpassen">Attribute von OSM Objekten anpassen</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-abgabe-changesets">How to Abgabe: Changesets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weitere-wege-zu-osm-beizutragen">Weitere Wege zu OSM beizutragen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hot-humanitarian-osm-team-tasking-manager">HOT (Humanitarian OSM Team) Tasking Manager</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mapillary-kartieren-mittels-streetlevel-bildern">Mapillary - Kartieren mittels Streetlevel Bildern</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#verbessert-radwege-routing">Verbessert Radwege routing!</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#microtasks-mit-streetcomplete">Microtasks mit Streetcomplete</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="osm-grundlagen">
+<h1>OSM Grundlagen<a class="headerlink" href="#osm-grundlagen" title="Link to this heading">#</a></h1>
+<p>OSM, kurz für OpenStreetMap, ist eine frei nutzbare Geodatenbank die von jeder Person editiert und erweitert werden kann.
+Mehr zu OSM und wie man in OSM kartiert könnt ihr unter <a class="reference external" href="https://learnosm.org/de/">https://learnosm.org/de/</a> finden.</p>
+<section id="osm-account-anlegen">
+<h2>OSM-Account anlegen<a class="headerlink" href="#osm-account-anlegen" title="Link to this heading">#</a></h2>
+<p>Unter <a class="reference external" href="https://www.openstreetmap.org/user/new">https://www.openstreetmap.org/user/new</a> könnt ihr einen OSM-Account anlegen.</p>
+</section>
+<section id="in-osm-mappen">
+<h2>In OSM mappen<a class="headerlink" href="#in-osm-mappen" title="Link to this heading">#</a></h2>
+<p>Um in OSM mappen zu können müsst ihr erst auf einen noch nicht oder unvollständig kartierten Bereich hineinzoomen.
+Wenn der <code class="docutils literal notranslate"><span class="pre">edit</span></code> Knopf noch ausgegraut ist, ist der gewählte Ausschnitt zu groß.</p>
+<p><img alt="OSM Kartenansicht" src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/OSM/startseite.png" /> <img alt="OSM Kartenansicht, reingezoomt" src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/OSM/hassilabied-osm.png" /></p>
+<p>Hat man einen Auschnitt gewählt, kann man auf den <code class="docutils literal notranslate"><span class="pre">edit</span></code> Knopf drücken und es öffnet sich das Kartierfenster.</p>
+<p>Bei der ersten Session mit einem neuen Account schlägt die Webseite dem Benutzer eine kurze Demonstration der Funktionen vor, macht diese gerne durch um eine Idee vom Kartieren in OSM zu bekommen!</p>
+<p><img alt="OSM Kartierfenster" src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/OSM/hassilabied-satellit.png" /></p>
+<p>Über dem Satellitenbild werden die schon gemappten Objekte angezeigt, ihr seht also auch in der Kartieransicht welche Objekte schon kartiert sind und welche nicht.</p>
+<p>Wenn ihr ein Objekt gewählt habt, dass ihr mappen wollt, müsst ihr entscheiden, ob es am Besten als ein Punkt-, Linien- oder Flächenobjekt dargestellt wird.
+Diese drei Objekttypen stehen für die Kartierung in OSM zur Verfügung.</p>
+<p>Wenn alle Objekte kartiert sind, auf <code class="docutils literal notranslate"><span class="pre">upload</span></code> klicken und einen Changeset Kommentar schreiben der kurz zusammenfasst was ihr geändert habt, dann speichern.</p>
+<section id="punkte">
+<h3>Punkte<a class="headerlink" href="#punkte" title="Link to this heading">#</a></h3>
+<p><video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/OSM/videos/map-trees.mp4"></video></p>
+<ul class="simple">
+<li><p>Klick zum Setzen eines Punktes</p></li>
+<li><p>Feature Typ wählen</p></li>
+<li><p>Felder nach bestem Wissen ausfüllen</p></li>
+</ul>
+</section>
+<section id="linien">
+<h3>Linien<a class="headerlink" href="#linien" title="Link to this heading">#</a></h3>
+<p>Linienobjekte in OSM setzen sich aus mehreren miteinander verbundenen Punkten zusammen.</p>
+<p><video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/OSM/videos/map-road.mp4"></video></p>
+<ul class="simple">
+<li><p>Klick zum Setzen der Punkte</p></li>
+<li><p>Doppelklick auf letzten Punkt zum Beenden der Linie</p></li>
+<li><p><em>falls notwendig:</em></p>
+<ul>
+<li><p>Rechtsklick auf letzten Punkt um die Linie fortzuführen</p></li>
+</ul>
+</li>
+<li><p>Feature Typ wählen</p></li>
+<li><p>Felder nach bestem Wissen ausfüllen</p></li>
+</ul>
+</section>
+<section id="flachen">
+<h3>Flächen<a class="headerlink" href="#flachen" title="Link to this heading">#</a></h3>
+<p>Flächenobjekte in OSM sind eigentlich nur geschlossene Linienobjekte.</p>
+<p><video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/OSM/videos/map-house.mp4"></video></p>
+<ul class="simple">
+<li><p>Klick zum Setzen der Punkte</p></li>
+<li><p>Klick auf den ersten Punkt zum Schließen der Fläche</p></li>
+<li><p><em>falls notwendig:</em></p>
+<ul>
+<li><p>Rechtsklick in die Fläche um rechte Winkel zu setzen</p></li>
+</ul>
+</li>
+<li><p>Feature Typ wählen</p></li>
+<li><p>Felder nach bestem Wissen ausfüllen</p></li>
+</ul>
+</section>
+<section id="attribute-von-osm-objekten-anpassen">
+<h3>Attribute von OSM Objekten anpassen<a class="headerlink" href="#attribute-von-osm-objekten-anpassen" title="Link to this heading">#</a></h3>
+<p>Um Attribute von OSM-Objekten zu verändern oder hinzuzufügen, müsst ihr ebenfalls in dem <code class="docutils literal notranslate"><span class="pre">edit</span></code>Fenster arbeiten.</p>
+<p><video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/OSM/videos/edit-tags.mp4"></video></p>
+<ul class="simple">
+<li><p>Klick auf das Objekt das angepasst werden soll</p></li>
+<li><p>Das Attribut (auch “Tag” genannt) anpassen</p></li>
+</ul>
+</section>
+</section>
+<section id="how-to-abgabe-changesets">
+<h2>How to Abgabe: Changesets<a class="headerlink" href="#how-to-abgabe-changesets" title="Link to this heading">#</a></h2>
+<p>Um eure Änderungen in OSM nachvollziehen zu können brauchen die Korrektoren euren OSM Nutzernamen und die Changeset ID eurer Änderungen.</p>
+<p>Die Changeset ID wird euch direkt nach dem Upload eurer Änderungen angezeigt, aber ihr könnt sie auch unter eurem Konto <code class="docutils literal notranslate"><span class="pre">My</span> <span class="pre">Profile</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">My</span> <span class="pre">Edits</span></code> zu jedem Upload den ihr gemacht habt finden.</p>
+<p><img alt="Changeset ID unter &quot;My Edits&quot;" src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/OSM/changeset-id.png" /></p>
+</section>
+<section id="weitere-wege-zu-osm-beizutragen">
+<h2>Weitere Wege zu OSM beizutragen<a class="headerlink" href="#weitere-wege-zu-osm-beizutragen" title="Link to this heading">#</a></h2>
+<section id="hot-humanitarian-osm-team-tasking-manager">
+<h3>HOT (Humanitarian OSM Team) Tasking Manager<a class="headerlink" href="#hot-humanitarian-osm-team-tasking-manager" title="Link to this heading">#</a></h3>
+<p>Der Tasking Manager ist ein Werkzeug für die Koordination von Freiwilligen und Organisation von Gruppen zur Kartierung in OpenStreetMap.
+Der Zweck des Tools besteht darin, eine Kartierungsaufgabe in kleinere Aufgaben zu unterteilen, die schnell erledigt werden können.
+Es zeigt, welche Bereiche kartiert werden müssen und in welchen Bereichen die Kartierung validiert werden muss.
+Dieser Ansatz erleichtert die Verteilung der Aufgaben an die verschiedenen Kartierer.
+Es ermöglicht weiter auch die Kontrolle des Fortschritts und der Homogenität der Arbeit (d. h. abzudeckende Elemente, zu verwendende spezifische Tags usw.).</p>
+<p>Die Wurzeln des Tasking Managers liegen in Kartierungskampagnen nach großen Katastrophen (Erdbeben in Haiti, Taifun Haiyan, Erdbeben in Ghorka). Mit seiner Hilfe konnten viele tausend Freiwillige weltweit online koordiniert und dringend benötigte Kartendaten der betroffenen Regionen zur Verfügung gestellt werden.</p>
+<p>Der Tasking Manager ist unter folgender Adresse erreichbar:</p>
+<p><a class="reference external" href="https://tasks.hotosm.org/">https://tasks.hotosm.org/</a></p>
+<p>Ihr könnt euch auf der Webseite mit eurem OpenStreetMap Account anmelden.</p>
+<p>Wählt dann ein Kartierungs Projekt aus. Ihr könnt z.B. nach Schwierigkeitsgrad und Dringlichkeit oder auch Themengebiet(Disaster, Nachhaltigkeit) filtern.
+Manche Projekte setzen Erfahrung vorraus. Dazu müsst ihr eine gewisse Anzahl an tasks erledigt haben.
+<strong>Wichtig</strong> lest die Anweisungen und Tipps des Projektes zu dem Ihr beitragen wollt.</p>
+<p>Wenn ihr ein Projekt und eine Task ausgewählt habt werdet ihr auf die üblichen OSM Editoren verlinkt (z.B. iD).
+Dort kartiert ihr in dem vorgegebenen Bereich (der Task).
+Wenn ihr fertig seid und eure erstellten Daten auf OpenStreetMap hochgeladen habt, kehrt zur Tasking Manager website zurück.
+Im Tasking Manager habt ihr für euren ausgewählten Task die folgenden Optionen:</p>
+<ul class="simple">
+<li><p>Aufgabe speichern - Ihr seid fertig mit dem kartieren der Task. Vergesst nicht einen Status festzulegen: <em>Ist diese Aufgabe vollständig kartiert?</em></p>
+<ul>
+<li><p><strong>Ja</strong> - Alle vom Projekt vorgegebenen Objekte (z.B. Gebäude &amp; Straßen) innerhalb des Gebietes sind kartiert</p></li>
+<li><p><strong>Nein</strong> - Es sind noch Objekte im Gebiet vorhanden die nicht kartiert wurden, Ihr möchtet aber nicht weiter kartieren bzw. eine andere Aufgabe bearbeiten</p></li>
+</ul>
+</li>
+<li><p>Aufgabe aufteilen - das Gebiet erscheint euch zu groß bzw. es beinhaltet zu viele Objektsignaturen (z.B. Gebäude in urbanen Regionen)</p></li>
+<li><p>Eine andere Aufgabe wählen - wählt eine andere Aufgabe ohne zu speichern.</p></li>
+</ul>
+</section>
+<section id="mapillary-kartieren-mittels-streetlevel-bildern">
+<h3>Mapillary - Kartieren mittels Streetlevel Bildern<a class="headerlink" href="#mapillary-kartieren-mittels-streetlevel-bildern" title="Link to this heading">#</a></h3>
+<p>Viele relevante Geoobjekte sind auf frei verfügbaren Satellitenbildern nur schwer oder nicht zu erkennen.
+Dazu zählen z.B. Verkehrsschilder, Schranken, Straßenlaternen, öffentliche Briefkästen oder die Oberfläche von Straßensegmenten.</p>
+<p><strong>Mapillary</strong> ist eine Platform und Software zum aufnehmen und verteilen von sogenannten Streetlevel Bildern (vgl. Google Streetview).
+Per App/Website können Fotos auf die Platform hochgeladen werden.
+Dise Fotos werden Georeferenziert und auf einer Karte abgebildet.
+Nutzer können diese Fotos dann nutzen um sich eine Region aus on-the-ground Perspektive anzusehen.
+Weiter können diese Fotos auch genutzt werden um Objekte in OpenStreetMap beizutragen.</p>
+<p>Website: <a class="reference external" href="https://www.mapillary.com">https://www.mapillary.com</a>
+Platform: <a class="reference external" href="https://www.mapillary.com/app">https://www.mapillary.com/app</a></p>
+<p><strong>Mapillary nutzen um auf OSM beizutragen</strong></p>
+<p>Geht auf die Platform Website und zoomt in eine Region eures Interesses.
+Wählt ein Bild aus (Klick auf einen Grünen Punkt in der Karte).
+Rechts seht ihr ein Symbol mit 3 Punkten, die <em>Image Details</em>.
+Dort findet Ihr einen link zu drei OSM Editoren.
+Wählt iD aus.
+Der iD Editor öffnet sich inklusive einem Mapillary Overlay.
+Nun könnt ihr ganz herkömmlich OSM editieren und habt sowohl die Satelliten als auch die Streetlevel Perspektive.</p>
+<section id="verbessert-radwege-routing">
+<h4>Verbessert Radwege routing!<a class="headerlink" href="#verbessert-radwege-routing" title="Link to this heading">#</a></h4>
+<p>Ihr fahrt gerne Rennrad, aber seid mit den Routen von Komoot/Strava/Garmin/Outdooractive nicht immer happy, da z.B. zu viel Schotter oder Waldwege eingebaut werden.
+Alle diese Dienste nutzen OSM als Grundlage.
+Oberflächentyp und Smoothness könnt ihr in OSM direkt hinzufügen/verbessern. Wenn ihr die Wege nicht selbst kennt, nutzt Mapillary wenn Fotos vorhanden sind oder nehmt Sie selbst per Mapillary App auf.</p>
+</section>
+</section>
+<section id="microtasks-mit-streetcomplete">
+<h3>Microtasks mit Streetcomplete<a class="headerlink" href="#microtasks-mit-streetcomplete" title="Link to this heading">#</a></h3>
+<p>Streetcomplete ist ein Einsteigerfreundlicher OpenStreetMap Editor für Android Smartphones und Tablets zum kartieren unterwegs.</p>
+<p><a class="reference external" href="https://streetcomplete.app/?lang=en">https://streetcomplete.app/?lang=en</a></p>
+<p>Die App zeigt Orte, an denen Daten über die App zu OpenStreetMap hinzugefügt werden können, als Quest-Pins auf einer Karte an.
+Jede dieser Aufgaben kann durch die Beantwortung einer einfachen Frage gelöst werden, wie z.B.
+“Ist diese Straße beleuchtet?”.
+Die gegebenen Antworten werden dann verarbeitet und direkt in die OSM-Datenbank im Namen des OSM-Kontos des Benutzers hochgeladen.
+Im Gegensatz zu den meisten anderen OSM-Editoren werden die eigentlichen Daten also nicht direkt auf der Karte angezeigt und es kann auch keine Geometrie verändert werden (mit Ausnahme der Aufteilung von Wegen).
+Der Beitrag zu dieser App erfolgt in erster Linie durch die Beantwortung dieser Aufgaben.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/gis/exercise_5"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../exercise_4/readme.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Übung 4</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="home-OSM-Daten-herunterladen.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">OSM Daten herunterladen</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#osm-account-anlegen">OSM-Account anlegen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-osm-mappen">In OSM mappen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#punkte">Punkte</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linien">Linien</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flachen">Flächen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#attribute-von-osm-objekten-anpassen">Attribute von OSM Objekten anpassen</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-abgabe-changesets">How to Abgabe: Changesets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weitere-wege-zu-osm-beizutragen">Weitere Wege zu OSM beizutragen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hot-humanitarian-osm-team-tasking-manager">HOT (Humanitarian OSM Team) Tasking Manager</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mapillary-kartieren-mittels-streetlevel-bildern">Mapillary - Kartieren mittels Streetlevel Bildern</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#verbessert-radwege-routing">Verbessert Radwege routing!</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#microtasks-mit-streetcomplete">Microtasks mit Streetcomplete</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By GIScience Heidelberg
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

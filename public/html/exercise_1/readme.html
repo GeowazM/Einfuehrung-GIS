@@ -1,0 +1,775 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercise 01 &#8212; QGIS-Book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'exercise_1/readme';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Nicht-Räumliche Abfragen" href="../exercise_2/qgis-Nicht-R%C3%A4umliche-Abfragen.html" />
+    <link rel="prev" title="Vektorsignaturen" href="visualisierung/qgis-Vektorsignaturen.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/gis-logo.svg" class="logo__image only-light" alt="QGIS-Book - Home"/>
+    <script>document.write(`<img src="../_static/gis-logo.svg" class="logo__image only-dark" alt="QGIS-Book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    GIS Einführung
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Allgemeines</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../allgemeines/Geodatenbeschaffung.html">Geodatenbeschaffung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../allgemeines/qgis-Installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../allgemeines/Hinweise.html">Hinweise zur Verwendung von GIS-Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../allgemeines/home-Probleme.html">Was tun bei Problemen?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../allgemeines/home-H%C3%A4ufige-Fragen-und-Fehlerquellen.html">Häufige Fragen und Fehlerquellen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../allgemeines/How-to-Abgabe.html">Hinweise</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../allgemeines/Geoformate.html">Geoformate</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercise 1</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="arbeiten_mit_qgis/qgis-Interface.html">Benutzeroberfläche anpassen</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="arbeiten_mit_qgis/home-Datenorganisation.html">Datenorganisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arbeiten_mit_qgis/home-Geodatenformate.html">Geodatenformate</a></li>
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="daten_in_qgis/qgis-Attributdaten.html">Attributdaten</a></li>
+<li class="toctree-l1"><a class="reference internal" href="daten_in_qgis/qgis-Layer-Konzept.html">Layer-Konzept</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="daten_in_qgis/qgis-Projektionen.html">Projektionen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visualisierung/qgis-Kartengestaltung.html">Kartengestaltung</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="visualisierung/qgis-Vektorsignaturen.html">Vektorsignaturen</a></li>
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Exercise 01</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercise 2</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../exercise_2/qgis-Nicht-R%C3%A4umliche-Abfragen.html">Nicht-Räumliche Abfragen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_2/qgis-R%C3%A4umliche-Abfragen.html">Räumliche Abfragen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_2/qgis-Geometrieoperationen.html">Geometrieoperationen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_2/readme.html">Übung 2</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercise 3</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../exercise_3/qgis-R%C3%A4umliche-Verschneidungen.html">Räumliche Verschneidungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_3/qgis-Nicht-R%C3%A4umliche-Joins.html">Nicht-Räumliche Joins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_3/qgis-R%C3%A4umliche-Joins.html">Räumliche Joins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_3/qgis-Tabellenfunktionen.html">Tabellenfunktionen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_3/readme.html">Übung 3</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercise 4</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../exercise_4/qgis-Basemaps.html">Basemaps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_4/qgis-Digitalisierung.html">Digitalisierung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_4/qgis-Georeferenzierung.html">Georeferenzierung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_4/readme.html">Übung 4</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercise 5</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../exercise_5/home-OSM-Grundlagen.html">OSM Grundlagen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_5/home-OSM-Daten-herunterladen.html">OSM Daten herunterladen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_5/readme.html">Übung 5</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercise 6</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../exercise_6/qgis-Rasterdarstellung.html">Darstellung von Rasterdaten</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_6/qgis-Konvertierung.html">Raster-Vektor Konvertierung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_6/qgis-Globale-Funktionen.html">Globale Rasteroperationen und Sonstige Funktionen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_6/qgis-Lokale-Funktionen.html">Lokale Rasteroperationen</a></li>
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../exercise_6/readme.html">Übung 6</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercise 7</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../exercise_7/qgis-Fokale-Funktionen.html">Fokale Rasteroperationen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_7/qgis-Zonale-Funktionen.html">Zonale Rasteroperationen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_7/qgis-Weitere-Rasterfunktionen.html">Weitere Rasterfunktionen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_7/readme.html">Übung 7</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercise 8</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../exercise_8/qgis-R%C3%A4umliche-Interpolationsverfahren.html">Räumliche Interpolationsverfahren</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_8/readme.html">Übung 8</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercise 9</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../exercise_9/qgis-Automatisierung.html">Automatisierung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercise_9/readme.html">Übung 9</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-gitlab"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-gitlab"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/issues/new?issue[title]=Issue%20on%20page%20%2Fexercise_1/readme.html&issue[description]=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/exercise_1/readme.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Exercise 01</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ziel-der-ubung">Ziel der Übung</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wiki">Wiki</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#daten">Daten</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aufgabenteil-1-programme-und-datenorganisation">Aufgabenteil 1 - Programme und Datenorganisation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aufgabenteil-2-verstandnis-und-nutzung-von-gis-programmen">Aufgabenteil 2 - Verständnis und Nutzung von GIS-Programmen</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="exercise-01">
+<h1>Exercise 01<a class="headerlink" href="#exercise-01" title="Link to this heading">#</a></h1>
+<section id="ziel-der-ubung">
+<h2>Ziel der Übung<a class="headerlink" href="#ziel-der-ubung" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>(1) Datenorganisation (GitLab und eigene Strukturierung) + GIS-Programm einrichten</p></li>
+<li><p>(2) Erste Schritte mit Layern + Kartengestaltung</p></li>
+</ul>
+</section>
+<section id="wiki">
+<h2>Wiki<a class="headerlink" href="#wiki" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../allgemeines/qgis-Installation.html"><span class="std std-doc">Installation</span></a></p></li>
+<li><p><a class="reference internal" href="../allgemeines/Hinweise.html"><span class="std std-doc">Hinweise zur Verwendung von GIS-Software</span></a></p></li>
+<li><p><a class="reference internal" href="../allgemeines/home-Probleme.html"><span class="std std-doc">Was tun bei Problemen?</span></a></p></li>
+<li><p><a class="reference internal" href="#/exercise_1/arbeiten_mit_qgis/home-Grundlegende_Einstellungen.md"><span class="xref myst">Grundlegende Einstellungen</span></a></p></li>
+<li><p><a class="reference internal" href="#/exercise_1/arbeiten_mit_qgis/qgis_Interface.md"><span class="xref myst">Benutzeroberfläche anpassen</span></a></p></li>
+<li><p><a class="reference internal" href="arbeiten_mit_qgis/home-Datenorganisation.html"><span class="std std-doc">Datenorganisation</span></a></p></li>
+<li><p><a class="reference internal" href="arbeiten_mit_qgis/home-Geodatenformate.html"><span class="doc std std-doc">Geodatenformate</span></a></p></li>
+<li><p><a class="reference internal" href="daten_in_qgis/qgis-Layer-Konzept.html"><span class="std std-doc">Layer-Konzept kennenlernen</span></a></p></li>
+<li><p><a class="reference internal" href="arbeiten_mit_qgis/qgis-Interface.html"><span class="std std-doc">Interface</span></a></p></li>
+<li><p><a class="reference internal" href="daten_in_qgis/qgis-Attributdaten.html"><span class="doc std std-doc">Attributdaten</span></a></p></li>
+<li><p><a class="reference internal" href="daten_in_qgis/qgis-Projektionen.html"><span class="doc std std-doc">Projektionen</span></a></p></li>
+<li><p><a class="reference internal" href="visualisierung/qgis-Vektorsignaturen.html"><span class="doc std std-doc">Vektorsignaturen</span></a></p></li>
+<li><p><a class="reference internal" href="visualisierung/qgis-Kartengestaltung.html"><span class="doc std std-doc">Kartengestaltung</span></a></p></li>
+</ul>
+</section>
+<section id="daten">
+<h2>Daten<a class="headerlink" href="#daten" title="Link to this heading">#</a></h2>
+<p>Ladet euch <a class="reference external" href="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/raw/master/exercise_01/exercise_01_data.zip">die Daten herunter</a> und speichert sie auf eurem PC. Legt einen lokalen Ordner (nicht auf einem Netzlaufwerk wie zum Beispiel “Q://Abgabe”) an und speichert dort die obigen Daten. (.zip Ordner müssen vorher entpackt werden.)</p>
+<ul class="simple">
+<li><p>Punkt-Layer: Next-Bike Ausleihpunkte (Quelle: <a class="reference external" href="https://www.openstreetmap.org/#map=6/51.330/10.453">OpenStreetMap and Contributors</a>)</p></li>
+<li><p>Linien: Neckar (Quelle: <a class="reference external" href="https://www.openstreetmap.org/#map=6/51.330/10.453">OpenStreetMap and Contributors</a>)</p></li>
+<li><p>Polygon-Layer (Quelle: <a class="reference external" href="https://www.openstreetmap.org/#map=6/51.330/10.453">OpenStreetMap and Contributors</a>):</p>
+<ul>
+<li><p>Einzugsgebiete der Next-Bike Stationen (gibt an wie lange man zu Fuß zur nächsten Station benötigt)</p></li>
+<li><p>Grenze Heidelbergs</p></li>
+<li><p>Stadtteilgrenzen</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="aufgabenteil-1-programme-und-datenorganisation">
+<h2>Aufgabenteil 1 - Programme und Datenorganisation<a class="headerlink" href="#aufgabenteil-1-programme-und-datenorganisation" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Verschafft euch einen Überblick über GitLab. Seht euch die Seiten <em><strong>Repository</strong></em>, in dem alle Übungen und Abgaben, sowie ein zeitlicher Übersichtsplan über den Verlauf des Tutoriums zu finden sind.</p></li>
+<li><p>Verschafft euch einen Überblick über die beste Vorgehensweise bei <a class="reference external" href="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/home-Probleme">Problemen</a>, die in der Arbeit mit GIS auftreten können: <em><strong>Wiki</strong></em> (in dem Informationen und Erklärvideos zu allen behandelten Themenbereichen gesammelt sind), und <em><strong>Issues</strong></em> (in denen Fragen gestellt und Probleme besprochen werden können)</p></li>
+<li><p>Macht euch mit dem Thema <a class="reference internal" href="arbeiten_mit_qgis/home-Datenorganisation.html"><span class="doc std std-doc">Datenorganisation</span></a> vertraut und erstellt eine geeigntete Ordnerstruktur, mit der ihr im kommenden Semester arbeiten könnt.</p></li>
+<li><p>Informiert euch über verschiedene <a class="reference internal" href="arbeiten_mit_qgis/home-Geodatenformate.html"><span class="doc std std-doc">Geodatenformate</span></a>.</p></li>
+<li><p>Entscheidet euch für ein GIS-Programm (<em><strong>ArcGIS</strong></em> oder <em><strong>QGIS</strong></em> – Was sind Vor- und Nachteile der beiden Programme?) und beginnt den Download-Prozess unter Beachtung der Hinweise zur <a class="reference internal" href="../allgemeines/qgis-Installation.html"><span class="doc std std-doc">Installation</span></a>.
+Hinweis zu den Programmen: das Wiki zu QGIS ist sehr viel ausführlicher und aktueller, zudem können euch nicht alle Tutor<em>innen bei Problemen in ArcGIS unterstützten. Als Anfänger</em>innen ist die Nutzung von QGIS zu empfehlen.</p></li>
+<li><p>Öffnet euer GIS und nehmt erste <a class="reference internal" href="arbeiten_mit_qgis/home-Grundlegende-Einstellungen.html"><span class="doc std std-doc">Einstellungen</span></a> in eurem GIS nach den Empfehlungen im Wiki vor (ändert zum Beispiel die Sprache).</p></li>
+</ol>
+</section>
+<section id="aufgabenteil-2-verstandnis-und-nutzung-von-gis-programmen">
+<h2>Aufgabenteil 2 - Verständnis und Nutzung von GIS-Programmen<a class="headerlink" href="#aufgabenteil-2-verstandnis-und-nutzung-von-gis-programmen" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Öffnet die oben angegebenen Dateien im GIS. Ladet dazu die Vektor-Layer in euer Programm.</p></li>
+<li><p>Interagiert mit der Karte und erkundet die Datensätze. Verwendet hierfür das Zoom-Werkzeug und verschiebt die Karte. Beachtet dabei die Statusleiste am unteren Bildschirmrand und wie diese sich verändert. Wie lauten die ungefähren Koordinaten für die westlichste Nextbike-Station?</p></li>
+<li><p>Macht eucht mit dem Layer-Fenster (Layer List) vertraut. Blendet abwechselnd verschiedene Layer ein und aus und verschiebt die Layer in der Hierarchie. Benennt eine Layer um und beachtet, dass dies keine Auswirkung auf die Datenquellen (Dateinamen, Speicherort) hat.</p></li>
+<li><p>Seht die Attributdaten der Layer ein. Schaut euch zu diesem Zweck die Attributtabelle an und macht euch mit der zugehörigen Nutzeroberfläche vertraut. Wie viele Features gibt es im Layer stadtteile? Wie viel Kapazität hat die Nextbike-Station am Hans-Thoma-Platz?</p></li>
+</ol>
+<details>
+  <summary>Lösung</summary>
+    <br/>
+    <ul>
+    <li>
+    Rechtsklick auf den Layernamen und Attributtabelle öffnen auswählen.
+  </details>
+<ol class="arabic simple" start="5">
+<li><p>Ändert die Projektion in der Kartenansicht zu WGS84 UTM32N (EPSG-Code: 32632). <em><strong>Beachtet, dass dies nichts an der Projektion (den Koordinaten) der Dateien ändert, sondern lediglich die Projektion der Kartenansicht beeinflusst.</strong></em> Überprüft dies in den Eigenschaften des Punkt-Layers. Welche Projektion ist dort angegeben?</p></li>
+</ol>
+<details>
+  <summary>Lösung</summary>
+    <br/>
+    <ul>
+    <li>
+    Die Angabe zur Projektion (KBS) findet ihr unter Eigenschaften -> Informationen. Eine Vekotrlayer kann reprojiziert werden unter Vektor -> Datenmanagment-Werkzeuge -> Layer reprojizieren.
+  </details>
+<ol class="arabic simple" start="6">
+<li><p>Nachdem ihr euch mit dem Programm vertraut gemacht habt, geht es jetzt über zur spezifischeren Anwendung und Kartengestaltung. Denkt daran euer Projekt zu speichern.</p></li>
+</ol>
+<details>
+  <summary>Lösung</summary>
+    <br/>
+    <ul>
+    <li>
+    Speichert euer Projekt unter Projekt -> Speichern als... . Die Projektdatei (.qgz) speichert nicht alle eure Daten, löscht also nicht eure einzelnen Layerdateien, da das Projekt auf diese zugreift.
+  </details>
+<ol class="arabic simple" start="7">
+<li><p>Wählt für das Punkt-Layer, sowie Linien-Layer passende <a class="reference internal" href="visualisierung/qgis-Vektorsignaturen.html"><span class="doc std std-doc">Signaturen</span></a></p></li>
+</ol>
+<details>
+  <summary>Lösung</summary>
+    <br/>
+    <ul>
+    <li>
+    Im verlinkten Wiki findet ihr hierzu kurze Screenrecordings, welche die verschiedenen Gestaltungsmöglichkeiten erklären. Tipp: Unter Ansicht -> Bedienfelder -> Layergestaltung kann man sich das Feld anzeigen lassen ohne ein neues Fenster zu öffnen.
+  </details>
+<ol class="arabic simple" start="8">
+<li><p>Nutzt für die Darstellung der Einzugsgebiete eine abgestufte Farbskala.</p></li>
+</ol>
+<details>
+  <summary>Lösung</summary>
+    <br/>
+    <ul>
+    <li>
+    Wählt die Layer isochronen aus und wählt im Bedienfeld Layergestaltung die Einstellung Abgestuft anstatt Einzelsymbold aus. Legt nun den Wert fest (hier: AA_MINS), sucht einen Farbverlauf aus und klickt auf Klassifizieren.
+  </details>
+<ol class="arabic simple" start="9">
+<li><p>Beschriftet die Stadtteile mit ihrem Namen.</p></li>
+</ol>
+<details>
+  <summary>Lösung</summary>
+    <br/>
+    <ul>
+    <li>
+    Layergestaltung -> Beschriftung (Pfeilsymbol "abc") wählen und von keine Beschriftung auf Einzelne Beschriftung umstellen und auch hier den Wert (hier: name) festlegen.
+  </details>
+<ol class="arabic simple" start="10">
+<li><p>Ändert das Koordinatenbezugssystem (Projektion) eurer Ansicht auf ein für Deutschland passenderes.</p></li>
+<li><p>Erstellt eine neue Druckzusammenstellung. Nutzt das Format A4 (Querformat) für eure Karte(<a class="reference internal" href="visualisierung/qgis-Kartengestaltung.html"><span class="doc std std-doc">siehe hier</span></a>)</p></li>
+</ol>
+<details>
+  <summary>Lösung</summary>
+    <br/>
+    <ul>
+    <li>
+    Wie ihr ein Kartenblatt erstellen könnt findet ihr ausführlich im Wiki erklärt. Mit einem Rechtsklick auf das Kartenblatt könnt ihr die Seiteneigenschaften öffnen und das Format abändern.
+  </details>
+<ol class="arabic simple" start="12">
+<li><p>Stellt einen passenden Maßstab ein (z.B. 1:75000).</p></li>
+</ol>
+<details>
+  <summary>Lösung</summary>
+    <br/>
+    <ul>
+    <li>
+    Nachdem ihr die Karte zum Layout hinzugefügt habt könnt ihr unter Elementeigenschaften den Maßstab der Karte festlegen.
+  </details>
+<ol class="arabic simple" start="13">
+<li><p>Verseht eure Karte mit Nordpfeil und Maßstab (Maßstabsbalken und Numerischen Maßstab).</p></li>
+</ol>
+<details>
+  <summary>Lösung</summary>
+    <br/>
+    <ul>
+    <li>
+    Die nötigen Tools finden sich in der vertikalen Symbolleiste am linken Rand des Feldes.
+  </details>
+<ol class="arabic simple" start="14">
+<li><p>Fügt abschließend Legende, Kartentitel, Autor und Datenquelle hinzu.</p></li>
+</ol>
+<details>
+  <summary>Lösung</summary>
+    <br/>
+    <ul>
+    <li>
+    Die nötigen Tools finden sich in der vertikalen Symbolleiste am linken Rand des Feldes. Schriftart, -größe, Rand oder Hintergrund können unter Elementeigenschaften angepasst werden.
+  </details>
+<ol class="arabic simple" start="15">
+<li><p>Speichert eure Karte als PDF.</p></li>
+</ol>
+<details>
+  <summary>Lösung</summary>
+    <br/>
+    <ul>
+    <li>
+    Layout -> als PDF exportieren.  
+  </details>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./exercise_1"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="visualisierung/qgis-Vektorsignaturen.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Vektorsignaturen</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../exercise_2/qgis-Nicht-R%C3%A4umliche-Abfragen.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Nicht-Räumliche Abfragen</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ziel-der-ubung">Ziel der Übung</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wiki">Wiki</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#daten">Daten</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aufgabenteil-1-programme-und-datenorganisation">Aufgabenteil 1 - Programme und Datenorganisation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aufgabenteil-2-verstandnis-und-nutzung-von-gis-programmen">Aufgabenteil 2 - Verständnis und Nutzung von GIS-Programmen</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By GIScience Heidelberg
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
