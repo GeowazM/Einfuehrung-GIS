@@ -7,7 +7,7 @@
 * Wiederverwendbarkeit/Verschachtelung von Prozeduren
 * Geringere Redundanz mittels Wiederverwendbarkeit
 
-![Automatisierung_Schaubild](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/automatisierung.PNG)
+![Automatisierung_Schaubild](https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/automatisierung.PNG)
 
 ## Graphische Modellierung
 
@@ -15,7 +15,7 @@
 * das Tool findet ihr unter "Processing" --> "Graphical Modeller"
 * Modelnamen festlegen und dann erst einmal speichern
 
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/QGIS/videos/qgis_modelbuilder_open.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_modelbuilder_open.mp4"></video>
 
 ### Model erstellen und speichern
 * Inputs hinzufügen:
@@ -26,16 +26,16 @@
 
 * Beispiel: zunächst alle Städte mit einer bestimmten Mindestbevölkerung selektieren, für die Selektion eine Buffer-Operation durchführen mit anpassbarer Buffer-Distanz
 
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/QGIS/videos/qgis_modelbuilder_model.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_modelbuilder_model.mp4"></video>
 
 ### Model ausführen
 * Modelparameter eingeben und Model ausführen
 * auf diese Art und Weise kann der gleiche Ablauf schnell und einfach mit angepassten Parametern oder Input-Layern durchgeführt werden
 
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/QGIS/videos/qgis_modelbuilder_run.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_modelbuilder_run.mp4"></video>
 
 ### Modell exportieren
 * Modelle können als Abbildung exportiert werden (z.B. im png-Format). Dies ist sehr hilfreich zur Dokumentation der eigenen Arbeitsschritte.
 * auch ein Export in die Programmiersprache python ist möglich
 
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/QGIS/videos/qgis_modelbuilder_export.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_modelbuilder_export.mp4"></video>

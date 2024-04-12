@@ -8,7 +8,7 @@ d.h. Rasterwerte berechnen/nutzen ohne Einbezug der Nachbarschaft
 * zum Beispiel um NDVI zu berechnen: (NIR - RED)/(NIR + RED)
 * Ausdruck: `("Virtual@8"-"Virtual@4")/("Virtual@8" + "Virtual@4")`
 
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/QGIS/videos/qgis_raster_calculator.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_raster_calculator.mp4"></video>
 
 ## Selektion
 * einfache Auswahl anhand eines Kriteriums
@@ -16,14 +16,14 @@ d.h. Rasterwerte berechnen/nutzen ohne Einbezug der Nachbarschaft
 * Beispiel: potentielle Wasserflächen anhand des NDVI auswählen (nur negative NDVI-Werte wählen)
 * Beispiel-Ausdruck: `"ndvi_raster@1" < 0`
 
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/QGIS/videos/qgis_raster_select.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_raster_select.mp4"></video>
 
 ## (Re-)Klassifizierung
 * einfachster Weg: SAGA-GIS Reclassify simple tool nutzen
 * Methode auswählen und Lookup-Table erstellen
 * Beispiel: NDVI klassifizieren
 
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/QGIS/videos/qgis_reclassify_22.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_reclassify_22.mp4"></video>
 
 * Raster-Calculator nutzen (Kombination von mehreren Selektionen)
 * Nutzung von verschachtelten Bedingungen

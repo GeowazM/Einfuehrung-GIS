@@ -10,7 +10,7 @@ Probleme mit verschwundenen oder verschobenen Layern liegen meist mit **a) nicht
 
 Das Layerfenster kann ganz einfach unter *View*, *Panels*, *Layers* wieder geöffnet werden.
 
-![Geschlossenes_Layerfenster](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/5c84e13a2c16fc7a8fdc6b5a7892c68d/Geschlossenes_Layerfenster.png)
+![Geschlossenes_Layerfenster](https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/5c84e13a2c16fc7a8fdc6b5a7892c68d/Geschlossenes_Layerfenster.png)
 
 ## Ungültige Geometrien (Invalid Geometry)
 Bei der Fehlermeldung *Ungültige Geometrien* kann es sein, dass Vektordateien im Laufe des Verarbeitungsprozesses oder des Herunterladens "verrutscht" sind (etwa, dass die Linien von Polygonen nicht mehr exakt aufeinander passen). Mit dem Tool ***Fix Geometries*** können diese Fehler in den Geometrien behoben werden.
@@ -19,7 +19,7 @@ Bei der Fehlermeldung *Ungültige Geometrien* kann es sein, dass Vektordateien i
 Falls die Vektorwerkzeuge in QGIS nicht mehr angezeigt werden, kann es sein, dass diese in den *Erweiterungen/Plugins* nicht mehr installiert sind.
 Diese können folgendermaßen wieder aktiviert werden:
 
-![image](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/70399029d3cb0111dbd3ec0dbcaf49be/image.png)
+![image](https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/70399029d3cb0111dbd3ec0dbcaf49be/image.png)
 
 *Erweiterungen/Plugins*, *Erweiterungen verwalten und installieren/Manage and Install Plugins*, dann unter dem Reiter *Alle/All* oder *Installiert/Installed* die Processing Tools suchen und den Haken wieder setzen.
 
@@ -28,11 +28,11 @@ Diese können folgendermaßen wieder aktiviert werden:
 
 Wenn der Wekrzeugkasten nicht in der Toolbar zu finden ist (siehe Abbildung 1), kann er ganz einfach unter *View*, *Panels*, *Layers* wieder angezeigt werden (siehe Abbildung 2).
 
-![Geschlossene_Toolbox_01](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/28e62131a69bcff19d5ebd9017d17f9b/Geschlossene_Toolbox_01.png)  
+![Geschlossene_Toolbox_01](https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/28e62131a69bcff19d5ebd9017d17f9b/Geschlossene_Toolbox_01.png)  
 *Abbildung 1*
 
 
-![Geschlossene_Toolbox](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/1e47cd6872f4e40e8f4b3560274ea3d6/Geschlossene_Toolbox.png)  
+![Geschlossene_Toolbox](https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/1e47cd6872f4e40e8f4b3560274ea3d6/Geschlossene_Toolbox.png)  
 *Abbildung 2*
 
 ## Georeferenzieren

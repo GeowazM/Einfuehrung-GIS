@@ -22,15 +22,15 @@ Für Abgabe 1 ist lediglich eine `.pdf`-Datei erforderlich. Es ist nicht notwend
 ### Dateien Umbenennen
 Um eine Datei umzubenennen, markiert Sie in eurem File Explorer oder anderem Dateimanager per Maus und einem Linksklick. Wählt im erscheinenden Kontextmenü `Umbenennen`. Markierte Dateien können auch per Taste [F2] umbenannt werden.
 
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/aa54322c9bb4908ca2152cff5ed879ae/umbennen.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/aa54322c9bb4908ca2152cff5ed879ae/umbennen.mp4"></video>
 
 
 ### Dateien komprimieren/ zippen
 Um eine oder mehrere Dateien zu komprimieren / zippen markiert die entsprechende(n) Datei(en) in eurem File Explorer oder anderem Dateimanager per Maus und einem Linksklick. Über den Eintrag _Senden an_ im Kontextmenü wählt `ZIP-komprimierter Ordner`. Alle markierten Dateien werden daraufhin in eine komprimierte `.zip`-Datei überführt.
 
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/7a6300cd4b1dc7172d5cfd01d2225085/zipping.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/7a6300cd4b1dc7172d5cfd01d2225085/zipping.mp4"></video>
 
 ### Hochladen auf Moodle
 Das Hochladen auf Moodle erfolgt über den [GIS-Kurs in Moodle](https://moodle.uni-heidelberg.de/course/view.php?id=12875). Die Sektion [_Übung: Abgaben_](https://moodle.uni-heidelberg.de/course/view.php?id=12875&section=12) befindet sich am unteren Ende des Kurses. Sie beinhaltet 5 Untersektionen, eine für jede Abgabe. Per Klick auf das entsprechende Menü öffnet sich eine Seite mit weiteren Infos zur jeweiligen Abgabe, dem Link zum entsprechenden GitLab-Ordner und den Bewertungskriterien. Über den Button _Abgabe hinzufügen_ kann per Drag & Drop oder per Klick auf das Dateisymbol (oben links, es öffnet sich ein Kontextmenü zur Auswahl von Dateien auf eurem lokalen PC) eure Abgabe hochgeladen und damit erfolgreich eingereicht werden.
 
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/7ad454512de5d5b9beef258fb6401db3/moodle_submission.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/7ad454512de5d5b9beef258fb6401db3/moodle_submission.mp4"></video>

@@ -10,7 +10,7 @@ Wie bereits in den [Hinweisen](/allgemeines/Hinweise.md) beschrieben, können be
 ## Ordnerstruktur
 Eine gute und übersichtliche Ordnerstruktur erleichtert das Arbeiten mit GIS Programmen enorm. Legt euch daher am besten noch vor dem ersten Tutorium Ordner für die Dateien an, mit denen ihr im Laufe des Semesters arbeiten werdet. Achtet darauf die Dateipfade nicht zu lang werden zu lassen, um Komplikationen zu vermeiden. Wir empfehlen dabei folgende Struktur:
 
-![image](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/1c62c207ac0bab58199b4e448282ff95/image.png)
+![image](https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/1c62c207ac0bab58199b4e448282ff95/image.png)
 
 Im Ordner *Input* können die von uns vorgegebenen Dateien für die jeweiligen Übungen gespeichert werden. In *Interim* werden alle Dateien abgelegt, die während eures Arbeitsprozesses erstellt werden. *Output* ist schließlich für die Ergebnisdateien, in den Abgaben für die Dateien, die eingereicht werden müssen, vorgesehen. Unterhalb der drei Ordner kann zusätzlich noch die zugehörige Projektdatei gespeichert werden.  
 

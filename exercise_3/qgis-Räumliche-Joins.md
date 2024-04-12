@@ -7,4 +7,4 @@
 * man kann angeben, welche Felder des Join-Layers hinzugefügt werden sollen
 * Beispiel: Zu den Städten (Input-Layer) die Zeitzone (Join-Layer) hinzufügen
 
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/QGIS/videos/qgis_spatial_join.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_spatial_join.mp4"></video>

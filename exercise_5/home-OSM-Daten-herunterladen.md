@@ -15,7 +15,7 @@ Mithilfe der Kartenansicht wählt man den Bereich aus für den Geodaten abgerufe
 Man kann hier auch eine Bounding-Box manuell selektieren (1) oder Koordinaten einer BBox in der Anfrage angeben (2).
 Man kann die gesamte Anfrage selbst in QL schreiben, oder aber den Wizard (3) nutzen, der den query dann erstellt.
 
-![overpass-turbo.png](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/OSM/overpass-turbo.png)
+![overpass-turbo.png](https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/OSM/overpass-turbo.png)
 
 ### Anfragen stellen
 
@@ -24,7 +24,7 @@ Ihr gebt in einer Anfrage bestimmte Tags an und Overpass gibt euch alle Objekte 
 Anfragen an Overpass können aus einem einzigen Argument bestehen (z.B. `"building"="clinic"`) oder mehreren Argumenten (z.B. `"building"="clinic"` `"building"="hospital"` und `"amenity"="hospital"`).
 Mehrere Argumente anzugeben ist empfehlenswert, da möglicherweise nicht alle Objekte die ihr sucht, auf die gleiche Weise getagged sind.
 
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/OSM/videos/use-turbo.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/OSM/videos/use-turbo.mp4"></video>
 
 Die zurückgegebenen Objekte werden euch in der Kartenansicht interaktiv dargestellt.
 Um mit den Daten weiterarbeiten zu können, z.B. in QGIS, könnt ihr sie über die Export-Funktion in verschiedenen Formaten herunterladen. In den meisten Fällen lässt es sich in QGIS am einfachsten mit GeoJSON arbeiten.
@@ -80,13 +80,13 @@ QuickOSM ist ein Plugin für QGIS mit der man Anfragen (queries) an die Overpass
 
 Ihr installiert QuickOSM wie gewohnt über Erweiterungen > Erweiterungen verwalten und installieren...
 
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/OSM/videos/install-quickosm.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/OSM/videos/install-quickosm.mp4"></video>
 
 ### Anfragen stellen
 
 Für QuickOSM gelten die gleichen Anfrage-Prinzipien wie für overpass turbo.
 
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/OSM/videos/use-quickosm.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/OSM/videos/use-quickosm.mp4"></video>
 
 Die zurückgegebenen Daten sind Vektorobjekte, die direkt in QGIS angezeigt werden.
 Diese neuen Layer sind erst mal nur temporär und müssen per Rechtsklick auf das Layer > Export > Objekte speichern als... auf eurem Computer gespeichert werden, wenn ihr Sie über die offene Sitzung hinaus behalten wollt.

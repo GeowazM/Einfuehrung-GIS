@@ -13,7 +13,7 @@ Tools für Vektordaten **sind nicht** für die Verarbeitung von Rasterdaten geei
 ## Shapefiles
 Shapefiles werden in **mehreren verschiedenen Dateien** aufgeteilt gespeichert. Dabei trägt jede "Teil-Datei" ganz bestimmte Informationen, wie in der Darstellung hier gesehen werden kann. Dateien mit der Endung .shp, zum Beispiel, sind die hauptsächliche Datei und beinhalten die Geometrien, während dbf-Dateien die Attributtabelle enthalten.
 
-![Shapefile_Dateiformate_1](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/43feaa0744cd1a6b29d52a6639730b2c/Shapefile_Dateiformate_1.png)  
+![Shapefile_Dateiformate_1](https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/43feaa0744cd1a6b29d52a6639730b2c/Shapefile_Dateiformate_1.png)  
 
 Shapefiles können immer **nur einen Geometrietyp beinhalten,** das heißt sie enthalten entweder ausschließlich Punkt, Linien, oder Polygon Features, niemals eine Mischung der drei.
 

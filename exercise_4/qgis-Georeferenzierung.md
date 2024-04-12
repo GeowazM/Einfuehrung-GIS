@@ -38,20 +38,20 @@ Reihenfolge in der Regel:
 ## Bild öffnen und Zielprojektion festlegen
 * Raster einladen und auf Nachfrage die Zielprojektion festlegen
 
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/QGIS/videos/qgis_georeference_set_projection.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_georeference_set_projection.mp4"></video>
 
 **Hinweis:**
 Wenn das Programm die Zielprojektion nicht von alleine abfragt, müssen die Einstellungen zu den KBS geändert werden.
 Das funktioniert unter *Einstellungen/Settings* in den Toolbars, *Optionen/Options* und dann unter dem Reiter *KBS/CRS*. In diesem muss unter *KBS für neue Layer/CRS for new layers* die Option *KBS abfragen/Prompt for CRS* gewählt werden.
 
-![Einstellungen_KBS-abfragen](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/d5872200508a16e8cd9f0a8f678566fc/Einstellungen_KBS-abfragen.png)![Einstellungen_KBS-abfragen_01](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/bf065093109e2512911bfa9d77e3f77a/Einstellungen_KBS-abfragen_01.png)
+![Einstellungen_KBS-abfragen](https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/d5872200508a16e8cd9f0a8f678566fc/Einstellungen_KBS-abfragen.png)![Einstellungen_KBS-abfragen_01](https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/bf065093109e2512911bfa9d77e3f77a/Einstellungen_KBS-abfragen_01.png)
 
 ## Transformationseinstellungen
 * Koordinatentransformation wählen
 * Resampling Methode wählen
 * Output-Pfad wählen
 
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/QGIS/videos/qgis_georeference_transformation_settings.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_georeference_transformation_settings.mp4"></video>
 
 **Praktische Hinweise:**
 * wenn das Raster nur gedreht, skaliert und verschoben werden muss *Polynom 1. Grades*
@@ -66,11 +66,11 @@ Das funktioniert unter *Einstellungen/Settings* in den Toolbars, *Optionen/Optio
 * Passpunkte sollten so präzise wie möglich platziert werden
 * Lieber mäßig viele gute Punkte, als viele schlecht platzierte!
 
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/QGIS/videos/qgis_georeference_set_points_grid.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_georeference_set_points_grid.mp4"></video>
 * Passpunktkoordinaten im Kartengrid ablesen und eintragen
 
 
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/QGIS/videos/qgis_georeference_set_points_from_layer.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_georeference_set_points_from_layer.mp4"></video>
 * Passpunktkoordinaten anhand eines anderen Layers wählen
 
 
@@ -79,7 +79,7 @@ Das funktioniert unter *Einstellungen/Settings* in den Toolbars, *Optionen/Optio
 * Datei öffnen und Georeferenzierung überprüfen
 * in unserem Beispiel zeigt das Ergebnis eine unterschiedliche Güte für verschiedene Regionen (z.B. relativ gut im zentralen Teil, weniger gut in Nord- und Südamerika)
 
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/QGIS/videos/qgis_georeference_save.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_georeference_save.mp4"></video>
 
 ## Weitere Ressourcen:
 * [Digital Geography Tutorial: wie georeferenziere ich eine gescannte Karte in QGIS?](http://de.digital-geography.com/QGIS-tutorial-teil-1-wie-georeferenziere-ich-eine-gescannte-karte-mit-QGIS/)

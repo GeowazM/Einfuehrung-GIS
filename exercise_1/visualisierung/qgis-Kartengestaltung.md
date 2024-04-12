@@ -3,16 +3,16 @@ Bei der Erstellung von Karten empfiehlt es sich grundsätzlich häufig zu speich
 
 ## Druckzusammenstellung
 ### Print Layout erstellen
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/QGIS/videos/qgis_new_print_layout.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_new_print_layout.mp4"></video>
 
 ### Seitenformat einstellen
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/QGIS/videos/qgis_map_page_size.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_map_page_size.mp4"></video>
 
 ## Karte
 Die Karte ist das zentrale Element der Druckzusammenstellung.
 
 ### Karten-Feld hinzufügen
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/QGIS/videos/qgis_map_add_map.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_map_add_map.mp4"></video>
 
 Für den Fall, dass mehrere Kartenblätter in einem Drucklayout zu sehen sein sollen, empfiehlt sich folgendes Vorgehen:
 
@@ -24,20 +24,20 @@ Für den Fall, dass mehrere Kartenblätter in einem Drucklayout zu sehen sein so
 Analog die Schritte für jedes Kartenblatt wiederholen.
 
 ### Maßstab einstellen
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/QGIS/videos/qgis_map_change_scale.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_map_change_scale.mp4"></video>
 
 ### Kartenrahmen gestalten / Grid hinzufügen
 * Achtet hier darauf das richtige Koordinatensystem zu wählen
 * Auch die Einheiten sind hier wichtig, in der Regel möchtet ihr ein Grid in den Einheiten der Projektion (*Map Units*) erstellen, *Centimeters* bezieht sich auf die Größe eures Kartenblattes und sagt nicht über die Lage der Daten aus
 
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/QGIS/videos/qgis_map_add_grid.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_map_add_grid.mp4"></video>
 
 Schaut hier auch nochmal in [diese Issue](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/issues/6) falls euer Grid nicht korrekt angezeigt wird.
 
 Fehler beim Einfügen des Grids können außerdem auftreten, wenn vorher falsch umprojeziert wurde, siehe [Projektionen](/exercise_1/daten_in_qgis/qgis-Projektionen.md).
 
 ### Übersichtskarte / 2. Kartenfeld
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/QGIS/videos/qgis_map_add_overview_map.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_map_add_overview_map.mp4"></video>
 
 * setzt den Haken bei "Lock Layers" wenn ihr unterschiedliche Layer für eure Karten anzeigen möchtet
 * settzt den Haken bei "Lock Styles for Layers", wenn ihr z.B. das gleiche Layer aber mit unterschiedlicher Signatur darstellen wollt.
@@ -45,21 +45,21 @@ Fehler beim Einfügen des Grids können außerdem auftreten, wenn vorher falsch 
 
 ## Weitere Kartenelemente
 ### Titel und Textfelder
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/QGIS/videos/qgis_map_add_textlabel.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_map_add_textlabel.mp4"></video>
 
 ### Legende
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/QGIS/videos/qgis_map_add_legend.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_map_add_legend.mp4"></video>
 
 ### Maßstabsbalken
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/QGIS/videos/qgis_map_add_scalebar.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_map_add_scalebar.mp4"></video>
 
 ### Nordpfeil / Bilder hinzufügen
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/QGIS/videos/qgis_map_add_image.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_map_add_image.mp4"></video>
 
 ## Die fertige Karte exportieren
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/QGIS/videos/qgis_export_map.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_export_map.mp4"></video>
 
-![qgis_exported_map](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/QGIS/my_world_map.png)
+![qgis_exported_map](https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/my_world_map.png)
 
 **Hinweis:**
 Es lohnt sich immer die exportierte Karte nach dem Exportieren und vor der Abgabe noch einmal anzusehen. Dabei können zum Beispiel **Fehler** in der Rechtschreibung, oder etwa auch eine falsche Maßeinheit im Maßstabsbalken auffallen. Es kann jedoch auch in seltenen Fällen vorkommen, dass **Kartenelemente** beim Exportiervorgang **verrutschen**, oder ungewollte Artefakte, wie zum Beispiel kleinere Striche, auftauchen. In der letzteren Situation liegt oft kein Fehler beim Bearbeiter, sondern im System vor. Um die falsche Darstellung zu beheben, hilft oft nur erneutes Exportieren oder das Erstellen eines neuen Drucklayouts (am besten durch ein Transferieren der ursprünglichen Zusammenstellung durch sukzessives  STRG + V).

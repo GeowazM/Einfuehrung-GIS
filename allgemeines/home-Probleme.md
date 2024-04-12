@@ -46,7 +46,7 @@ Bevor ihr ein neues Issue verfasst, vergewissert euch erneut alle Punkte auf fol
 * Es wurde sich zum Zeitpunkt des Verfassens des Issues erneut vergewissert, dass nicht bereits ein Issue zur bestehenden Problematik existiert (Nur die Überschriften scannen ist nicht ausreichend! Es müssen mindestens die Inhalte aller Issues zur jeweiligen Exercise/Abgabe inspiziert werden.).
 
 **_New Issue_-Interface**  
-![gitlab_new_issue_interface](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/3fe93f58711c16ca2c9e853d5c9bbaf0/New_Issue.JPG)
+![gitlab_new_issue_interface](https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/3fe93f58711c16ca2c9e853d5c9bbaf0/New_Issue.JPG)
 
 **1) Titel**  
 Wählt einen kurzen und prägnanten Titel für euer Issue aus mit der euer Problem ersichtlich und von KommilitonInnen leicht gefunden werden kann. Im Titel muss nicht die Abgabe/Exercise genannt werden. Die Zuordnung geschieht über die Labels (siehe unten).
@@ -67,7 +67,7 @@ In diesem Dropdown-Menü könnt ihr euer Issue mit Labeln versehen. Diese werden
 Bevor ihr euer Issue absendet, könnt ihr euch in der Preview das derzeitige Layout eures Textes, wie er nachher von anderen gesehen wird, ansehen. In diesem Schritt sollte auch nochmals abschließend überprüft werden, ob alle Leitfragen und Hinweise des Templates entfernt wurden. Die Beschreibung eures Issues ist in _Markdown_ geschrieben. Die dazugehörige Syntax lässt sich zum Beispiel [hier](https://www.markdownguide.org/basic-syntax/) in wenigen Minuten erlernen (Es reicht ja nur die Abschnitte des Guides zu lesen, die für euer Layouting-Wünsche benötigt werden). Der Aufwand lohnt sich, ein übersichtlicheres Issue kann deutlich leichter und schneller bearbeitet werden.
 
 ## Beispiel zum Erstellen eines Issues
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/5138b315a80fa43e49ef24ef97b24592/Issue_erstellen_Beispiel.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/5138b315a80fa43e49ef24ef97b24592/Issue_erstellen_Beispiel.mp4"></video>
 
 * Beim Eintippen des Titels ist im Video zu sehen, dass Issues mit ähnlichen Titeln angezeigt werden. Dies bietet einem erneut die Möglichkeit Themendopplungen zu vermeiden.
 * Die Beschreibung im Beispiel ist sehr minimalistisch. In diesem Fall geht das in Ordnung, da eine Fehlermeldung als Screenshot zur Verfügung gestellt werden konnte, sowie der Zeitpunkt des Auftretens dieser Fehlermeldung genau bestimmt ist.

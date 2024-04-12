@@ -12,13 +12,13 @@ Unter https://www.openstreetmap.org/user/new könnt ihr einen OSM-Account anlege
 Um in OSM mappen zu können müsst ihr erst auf einen noch nicht oder unvollständig kartierten Bereich hineinzoomen.
 Wenn der `edit` Knopf noch ausgegraut ist, ist der gewählte Ausschnitt zu groß.
 
-![OSM Kartenansicht](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/OSM/startseite.png) ![OSM Kartenansicht, reingezoomt](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/OSM/hassilabied-osm.png)
+![OSM Kartenansicht](https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/OSM/startseite.png) ![OSM Kartenansicht, reingezoomt](https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/OSM/hassilabied-osm.png)
 
 Hat man einen Auschnitt gewählt, kann man auf den `edit` Knopf drücken und es öffnet sich das Kartierfenster.
 
 Bei der ersten Session mit einem neuen Account schlägt die Webseite dem Benutzer eine kurze Demonstration der Funktionen vor, macht diese gerne durch um eine Idee vom Kartieren in OSM zu bekommen!
 
-![OSM Kartierfenster](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/OSM/hassilabied-satellit.png)
+![OSM Kartierfenster](https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/OSM/hassilabied-satellit.png)
 
 Über dem Satellitenbild werden die schon gemappten Objekte angezeigt, ihr seht also auch in der Kartieransicht welche Objekte schon kartiert sind und welche nicht.
 
@@ -29,7 +29,7 @@ Wenn alle Objekte kartiert sind, auf `upload` klicken und einen Changeset Kommen
 
 ### Punkte
 
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/OSM/videos/map-trees.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/OSM/videos/map-trees.mp4"></video>
 
 - Klick zum Setzen eines Punktes
 - Feature Typ wählen
@@ -39,7 +39,7 @@ Wenn alle Objekte kartiert sind, auf `upload` klicken und einen Changeset Kommen
 
 Linienobjekte in OSM setzen sich aus mehreren miteinander verbundenen Punkten zusammen.
 
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/OSM/videos/map-road.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/OSM/videos/map-road.mp4"></video>
 
 - Klick zum Setzen der Punkte
 - Doppelklick auf letzten Punkt zum Beenden der Linie
@@ -52,7 +52,7 @@ Linienobjekte in OSM setzen sich aus mehreren miteinander verbundenen Punkten zu
 
 Flächenobjekte in OSM sind eigentlich nur geschlossene Linienobjekte.
 
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/OSM/videos/map-house.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/OSM/videos/map-house.mp4"></video>
 
 - Klick zum Setzen der Punkte
 - Klick auf den ersten Punkt zum Schließen der Fläche
@@ -65,7 +65,7 @@ Flächenobjekte in OSM sind eigentlich nur geschlossene Linienobjekte.
 
 Um Attribute von OSM-Objekten zu verändern oder hinzuzufügen, müsst ihr ebenfalls in dem `edit`Fenster arbeiten.
 
-<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/OSM/videos/edit-tags.mp4"></video>
+<video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/OSM/videos/edit-tags.mp4"></video>
 
 - Klick auf das Objekt das angepasst werden soll
 - Das Attribut (auch "Tag" genannt) anpassen
@@ -76,7 +76,7 @@ Um eure Änderungen in OSM nachvollziehen zu können brauchen die Korrektoren eu
 
 Die Changeset ID wird euch direkt nach dem Upload eurer Änderungen angezeigt, aber ihr könnt sie auch unter eurem Konto `My Profile` > `My Edits` zu jedem Upload den ihr gemacht habt finden.
 
-![Changeset ID unter "My Edits"](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/uploads/OSM/changeset-id.png)
+![Changeset ID unter "My Edits"](https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/OSM/changeset-id.png)
 
 ## Weitere Wege zu OSM beizutragen
 
