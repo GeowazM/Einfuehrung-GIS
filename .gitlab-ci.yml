@@ -9,8 +9,8 @@ jupyter-build:
     - pip install -U jupyter-book matplotlib numpy
     - rm -rf _build
     # list folders with notebooks here. Notebooks must be present in _toc.yml
-    - jupyter-book clean
-    - jupyter-book build
+    - jupyter-book clean .
+    - jupyter-book build .
     # Copy built site to docs
     #- cp -r website/_build/html docs
     #- rm -r website/_build
