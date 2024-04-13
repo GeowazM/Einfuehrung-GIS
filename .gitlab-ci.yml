@@ -1,2 +1,39 @@
-# The Docker image that will be used to build your app
-image: qgis-book
+stages:
+  - build
+  - deploy
+
+jupyter-build:
+  stage: build
+  image: python:3.10-slim
+  script:
+    - pip install -U jupyter-book matplotlib numpy
+    - rm -rf _build
+    # list folders with notebooks here. Notebooks must be present in _toc.yml
+    - jupyter-book clean
+    - jupyter-book build
+    # Copy built site to docs
+    #- cp -r website/_build/html docs
+    #- rm -r website/_build
+    # Move figs to built website
+    #- rm -rf docs/content/figs
+    #- mv website/content/figs docs/content
+    # Remove copied folders
+    #- rm -rf website/content
+    # No Jekyll on remote server
+    #- touch docs/.nojekyll
+  #artifacts:
+    #paths:
+     # - docs/
+
+pages:
+  stage: deploy
+  only:
+    - main
+  image: busybox:latest
+  script:
+    - mv _build public
+  artifacts:
+    paths:
+      - public
+
+
