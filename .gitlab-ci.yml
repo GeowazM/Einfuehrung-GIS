@@ -22,9 +22,9 @@ jupyter-build:
     #- rm -rf website/content
     # No Jekyll on remote server
     #- touch docs/.nojekyll
-  #artifacts:
-    #paths:
-     # - docs/
+  artifacts:
+    paths:
+      - _build/
 
 pages:
   stage: deploy
