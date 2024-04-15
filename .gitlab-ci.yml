@@ -32,6 +32,8 @@ pages:
   only:
     - main
   image: busybox:latest
+  script:
+    - echo 'Deploying.'
   artifacts:
     paths:
       - public
