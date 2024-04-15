@@ -13,7 +13,7 @@ jupyter-build:
     - jupyter-book build .
     - rm -r public
     # Copy built site to docs
-    - cp -r _build/html build
+    - cp -r _build/html public
     #- cp -r website/_build/html docs
     #- rm -r website/_build
     # Move figs to built website
@@ -22,18 +22,16 @@ jupyter-build:
     # Remove copied folders
     #- rm -rf website/content
     # No Jekyll on remote server
-    #- touch docs/.nojekyll
+    - touch docs/.nojekyll
   artifacts:
     paths:
-      - build/
+      - public/
 
 pages:
   stage: deploy
   only:
     - main
   image: busybox:latest
-  script:
-    - mv build public
   artifacts:
     paths:
       - public
