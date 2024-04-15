@@ -22,7 +22,7 @@ jupyter-build:
     # Remove copied folders
     #- rm -rf website/content
     # No Jekyll on remote server
-    - touch docs/.nojekyll
+    - touch public/.nojekyll
   artifacts:
     paths:
       - public/
