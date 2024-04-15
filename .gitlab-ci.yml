@@ -32,7 +32,6 @@ pages:
     - main
   image: busybox:latest
   script:
-    - mkdir public
     - mv _build public
   artifacts:
     paths:
