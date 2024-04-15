@@ -13,6 +13,7 @@ jupyter-build:
     - jupyter-book build .
     - rm -r public
     # Copy built site to docs
+    - cp -r _build/html build
     #- cp -r website/_build/html docs
     #- rm -r website/_build
     # Move figs to built website
@@ -24,7 +25,7 @@ jupyter-build:
     #- touch docs/.nojekyll
   artifacts:
     paths:
-      - _build/
+      - build/
 
 pages:
   stage: deploy
@@ -32,7 +33,7 @@ pages:
     - main
   image: busybox:latest
   script:
-    - mv _build public
+    - mv build public
   artifacts:
     paths:
       - public
