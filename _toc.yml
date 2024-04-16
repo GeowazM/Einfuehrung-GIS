@@ -13,7 +13,7 @@ parts:
       - file: content/gis/allgemeines/home-Häufige-Fragen-und-Fehlerquellen
       - file: content/gis/allgemeines/How-to-Abgabe
       - file: content/gis/allgemeines/Geoformate
-  - caption: Exercise 1
+  - caption: Grundlagen der Kartographie
     chapters:
       - file: content/gis/exercise_1/arbeiten_mit_qgis/home-Grundlegende_Einstellungen
       - file: content/gis/exercise_1/arbeiten_mit_qgis/qgis-Interface
@@ -26,49 +26,49 @@ parts:
       - file: content/gis/exercise_1/visualisierung/qgis-Vektorsignaturen
       - file: content/gis/exercise_1/readme
 
-  - caption: Exercise 2
+  - caption: Grundlage der Arbeit mit Vektordaten
     chapters:
       - file: content/gis/exercise_2/qgis-Nicht-Räumliche-Abfragen
       - file: content/gis/exercise_2/qgis-Räumliche-Abfragen
       - file: content/gis/exercise_2/qgis-Geometrieoperationen
       - file: content/gis/exercise_2/readme
-  - caption: Exercise 3
+  - caption: Forgeschrittene Arbeit mit Vektordaten
     chapters:
       - file: content/gis/exercise_3/qgis-Räumliche-Verschneidungen
       - file: content/gis/exercise_3/qgis-Nicht-Räumliche-Joins
       - file: content/gis/exercise_3/qgis-Räumliche-Joins
       - file: content/gis/exercise_3/qgis-Tabellenfunktionen
       - file: content/gis/exercise_3/readme
-  - caption: Exercise 4
+  - caption: Grundlagen der Arbeit mit Rasterdaten
     chapters:
-      - file: content/gis/exercise_4/qgis-Basemaps
-      - file: content/gis/exercise_4/qgis-Digitalisierung
-      - file: content/gis/exercise_4/qgis-Georeferenzierung
-      - file: content/gis/exercise_4/readme
-  - caption: Exercise 5
-    chapters:
-      - file: content/gis/exercise_5/home-OSM-Grundlagen
-      - file: content/gis/exercise_5/home-OSM-Daten-herunterladen
-      - file: content/gis/exercise_5/readme
-  - caption: Exercise 6
-    chapters:
-      - file: content/gis/exercise_6/qgis-Layer-Konzept#raster-layer-öffnen
+      - file: content/gis/exercise_6/qgis-Raster-oeffnen
       - file: content/gis/exercise_6/qgis-Rasterdarstellung
       - file: content/gis/exercise_6/qgis-Konvertierung
       - file: content/gis/exercise_6/qgis-Globale-Funktionen
       - file: content/gis/exercise_6/qgis-Lokale-Funktionen
       - file: content/gis/exercise_6/readme
-  - caption: Exercise 7
+  - caption: Fortgeschrittene Arbeit mit Rasterdaten
     chapters:
       - file: content/gis/exercise_7/qgis-Fokale-Funktionen
       - file: content/gis/exercise_7/qgis-Zonale-Funktionen
       - file: content/gis/exercise_7/qgis-Weitere-Rasterfunktionen
       - file: content/gis/exercise_7/readme
-  - caption: Exercise 8
+  - caption: Digitalisierung und Georeferenzierung
+    chapters:
+      - file: content/gis/exercise_4/qgis-Basemaps
+      - file: content/gis/exercise_4/qgis-Digitalisierung
+      - file: content/gis/exercise_4/qgis-Georeferenzierung
+      - file: content/gis/exercise_4/readme
+  - caption: OpenStreetMap-Daten
+    chapters:
+      - file: content/gis/exercise_5/home-OSM-Grundlagen
+      - file: content/gis/exercise_5/home-OSM-Daten-herunterladen
+      - file: content/gis/exercise_5/readme
+  - caption: Interpolation
     chapters:
       - file: content/gis/exercise_8/qgis-Räumliche-Interpolationsverfahren
       - file: content/gis/exercise_8/readme
-  - caption: Exercise 9
+  - caption: Automatisierung
     chapters:
       - file: content/gis/exercise_9/qgis-Automatisierung
       - file: content/gis/exercise_9/readme
