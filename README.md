@@ -1,6 +1,6 @@
 # QGIS-Book
 
-Das Buch ist online verfügbar unter: https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/
+Das Buch ist online verfügbar unter: http://giscience.courses-pages.gistools.geog.uni-heidelberg.de/qgis-book/intro.html
 
 Für die Entwicklung:
 * Klonen Sie das Repository: `git clone https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book`
