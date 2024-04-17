@@ -33,4 +33,4 @@ d.h. Rasterwerte berechnen/nutzen ohne Einbezug der Nachbarschaft
 * *Values description: The value range of an NDVI is -1 to 1. Negative values of NDVI (values approaching -1) correspond to water. Values close to zero (-0.1 to 0.1) generally correspond to barren areas of rock, sand, or snow. Low, positive values represent shrub and grassland (approximately 0.2 to 0.4), while high values indicate temperate and tropical rainforests (values approaching 1).* ([Quelle: Sentinel Hub](https://www.sentinel-hub.com/eoproducts/ndvi-normalized-difference-vegetation-index))
 
 ## Weitere Ressourcen
-* [QGIS Doku: Raster Calculator](https://docs.qgis.org/3.4/en/docs/user_manual/working_with_raster/raster_calculator.html)
+* [QGIS Doku: Raster Calculator](https://docs.qgis.org/3.34/en/docs/user_manual/working_with_raster/raster_analysis.html#raster-calculator)
