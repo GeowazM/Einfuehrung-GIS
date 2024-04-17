@@ -11,7 +11,9 @@ jupyter-build:
     # list folders with notebooks here. Notebooks must be present in _toc.yml
     - jupyter-book clean .
     - jupyter-book build .
+    - rm -r public
     # Copy built site to docs
+    - cp -r _build/html public
     #- cp -r website/_build/html docs
     #- rm -r website/_build
     # Move figs to built website
@@ -20,10 +22,10 @@ jupyter-build:
     # Remove copied folders
     #- rm -rf website/content
     # No Jekyll on remote server
-    #- touch docs/.nojekyll
-  #artifacts:
-    #paths:
-     # - docs/
+    - touch public/.nojekyll
+  artifacts:
+    paths:
+      - public/
 
 pages:
   stage: deploy
@@ -31,7 +33,7 @@ pages:
     - main
   image: busybox:latest
   script:
-    - mv _build public
+    - echo 'Deploying.'
   artifacts:
     paths:
       - public
