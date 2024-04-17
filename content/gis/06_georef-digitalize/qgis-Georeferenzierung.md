@@ -24,18 +24,18 @@ Je nachdem, wie gut diese Eigenschaften erfüllt sind, wirkt sich dies auf die G
 
 ## Vorgehen in QGIS
 Reihenfolge in der Regel:
-1. [nicht-georeferenziertes Bild öffnen](qgis-Georeferenzierung#bild-öffnen-und-zielprojektion-festlegen)
-2. [Zielprojektion festlegen](qgis-Georeferenzierung#bild-öffnen-und-zielprojektion-festlegen)
-3. [Transformationseinstellungen wählen](qgis-Georeferenzierung#transformationseinstellungen)
-4. [Passpunkte setzen](qgis-Georeferenzierung#passpunkte-setzen-und-speichern)
-5. [Passpunkte speichern](qgis-Georeferenzierung#passpunkte-setzen-und-speichern)
-6. [Georeferenziertes Bild speichern](qgis-Georeferenzierung#georeferenziertes-bild-speichern)
+1. [nicht-georeferenziertes Bild öffnen](/content/gis/06_georef-digitalize/qgis-Georeferenzierung.md#bild-oeffnen-und-zielprojektion-festlegen)
+2. [Zielprojektion festlegen](/content/gis/06_georef-digitalize/qgis-Georeferenzierung.md#bild-oeffnen-und-zielprojektion-festlegen)
+3. [Transformationseinstellungen wählen](/content/gis/06_georef-digitalize/qgis-Georeferenzierung.md#transformationseinstellungen)
+4. [Passpunkte setzen](/content/gis/06_georef-digitalize/qgis-Georeferenzierung.md#passpunkte-setzen-und-speichern)
+5. [Passpunkte speichern](/content/gis/06_georef-digitalize/qgis-Georeferenzierung.md#passpunkte-setzen-und-speichern)
+6. [Georeferenziertes Bild speichern](/content/gis/06_georef-digitalize/qgis-Georeferenzierung.md#georeferenziertes-bild-speichern)
 7. Georeferenzierung überprüfen
 
-* [Weitere Ressourcen](qgis-Georeferenzierung#weitere-ressourcen)
-* [Allgemeine Fehlerhinweise](qgis-Georeferenzierung#allgemeine-fehlerhinweise)
+* [Weitere Ressourcen](/content/gis/06_georef-digitalize/qgis-Georeferenzierung.md#weitere-ressourcen)
+* [Allgemeine Fehlerhinweise](/content/gis/06_georef-digitalize/qgis-Georeferenzierung.md#allgemeine-fehlerhinweise)
 
-## Bild öffnen und Zielprojektion festlegen
+## Bild oeffnen und Zielprojektion festlegen
 * Raster einladen und auf Nachfrage die Zielprojektion festlegen
 
 <video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/QGIS/videos/qgis_georeference_set_projection.mp4"></video>

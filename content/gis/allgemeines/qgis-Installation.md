@@ -40,5 +40,5 @@ In den herkömmlichen apt Paketquellen wird vermutlich eine ältere Version von 
 Solltet ihr hierüber eine QGIS Version >3.30 installieren müsst ihr das Plugin _Processing Saga NextGen Provider_ noch installieren. 
 
 Mehr zu wie man Plugins in QGIS installiert und aktiviert findet ihr hier:
-[qgis-Interface#erweiterungen-plugins-installieren](/content/gis/01_karto-basics/arbeiten_mit_qgis/qgis-Interface#erweiterungen-plugins-installieren)
+[qgis-Interface#erweiterungen-plugins-installieren](/content/gis/01_karto-basics/qgis-Interface.md#erweiterungen-plugins-installieren)
  

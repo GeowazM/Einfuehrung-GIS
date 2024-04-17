@@ -71,7 +71,7 @@ Bevor ihr euer Issue absendet, könnt ihr euch in der Preview das derzeitige Lay
 
 * Beim Eintippen des Titels ist im Video zu sehen, dass Issues mit ähnlichen Titeln angezeigt werden. Dies bietet einem erneut die Möglichkeit Themendopplungen zu vermeiden.
 * Die Beschreibung im Beispiel ist sehr minimalistisch. In diesem Fall geht das in Ordnung, da eine Fehlermeldung als Screenshot zur Verfügung gestellt werden konnte, sowie der Zeitpunkt des Auftretens dieser Fehlermeldung genau bestimmt ist.
-* Aufmerksame Leser der [Hinweise](/content/gis/allgemeines/Hinweise) können zudem feststellen, dass das Erstellen des Issues nicht gerechtfertigt ist, da die Befolgung des Hinweises zu [GRASS Anwendungen](/content/gis/allgemeines/allgemeines/Hinweise.md#grass-anwendungen) das Problem bereits beheben würde.
+* Aufmerksame Leser der [Hinweise](/content/gis/allgemeines/Hinweise) können zudem feststellen, dass das Erstellen des Issues nicht gerechtfertigt ist, da die Befolgung des Hinweises zu [GRASS Anwendungen](/content/gis/allgemeines/Hinweise.md#grass-anwendungen) das Problem bereits beheben würde.
 
 ## Nach erfolgreicher Problemlösung
 Solltet ihr für euer Problem eine Lösung gefunden haben (entweder selbstständig oder durch eine Antwort in eurem Issue), dann teilt diese Lösung unbedingt als neuen Kommentar in eurem Issue mit. Dadurch können KommilitonInnen mit dem gleichen Problem sofort nachlesen, welcher Lösungsweg funktioniert hat. Gleichzeitig dient euer Kommentar mit dem Lösungsweg auch als Feedback für die TutorInnen, dass ein Issue vollständig behoben wurde und somit geschlossen werden kann.  

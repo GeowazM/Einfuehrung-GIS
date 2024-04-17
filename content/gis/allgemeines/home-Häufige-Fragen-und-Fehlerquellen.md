@@ -3,7 +3,7 @@
 ## Layeranzeige
 *Mein **Layer** in QGIS wird nicht angezeigt, bzw. Layer, die sich eigentlich an derselben Position befinden sollten liegen nicht aufeinander.*
 
-Probleme mit verschwundenen oder verschobenen Layern liegen meist mit **a) nicht übereinstimmenden KBS in Layern und Projekt**, oder b) **fehlerhaftem Reprojizieren** zusammen. Um dieses Problem zu lösen, kontrolliert also **a)** am besten zuerst in den Eigenschaften der Layer (Rechtsklick, *Eigenschaften*, unter dem Reiter *Information*), in welcher Projektion diese vorliegen, und im Status Bar, unten rechts, welches Projekt KBS/CRS eingestellt ist. Behebt dann etwaige Diskrepanzen durch Umprojizieren der Layer, oder Ändern der Einstellung des Projekt KBS/CRS. Beachtet **b)** beim Reprojizieren genau das Vorgehen, welches im Wiki unter [Projektionen](/content/gis/01_karto-basics/daten_in_qgis/qgis-Projektionen) beschrieben wird. Fehler entstehen häufig, wenn *KBS setzen* und kein Reprojiziertool verwendet wird. Habt ihr den Verdacht, dass euer Umprojizieren fehlerhaft verlaufen ist, löscht alle betroffenen Layer aus GIS, ladet die Daten erneut herein und projiziert dann neu um. Im Zweifel müssen die Daten unter Umständen auch frisch heruntergeladen werden.
+Probleme mit verschwundenen oder verschobenen Layern liegen meist mit **a) nicht übereinstimmenden KBS in Layern und Projekt**, oder b) **fehlerhaftem Reprojizieren** zusammen. Um dieses Problem zu lösen, kontrolliert also **a)** am besten zuerst in den Eigenschaften der Layer (Rechtsklick, *Eigenschaften*, unter dem Reiter *Information*), in welcher Projektion diese vorliegen, und im Status Bar, unten rechts, welches Projekt KBS/CRS eingestellt ist. Behebt dann etwaige Diskrepanzen durch Umprojizieren der Layer, oder Ändern der Einstellung des Projekt KBS/CRS. Beachtet **b)** beim Reprojizieren genau das Vorgehen, welches im Wiki unter [Projektionen](/content/gis/01_karto-basics/qgis-Projektionen) beschrieben wird. Fehler entstehen häufig, wenn *KBS setzen* und kein Reprojiziertool verwendet wird. Habt ihr den Verdacht, dass euer Umprojizieren fehlerhaft verlaufen ist, löscht alle betroffenen Layer aus GIS, ladet die Daten erneut herein und projiziert dann neu um. Im Zweifel müssen die Daten unter Umständen auch frisch heruntergeladen werden.
 
 ## Layerfenster
 *Ich habe mein **Layerfenster** aus Versehen geschlossen. Wie kann ich es wieder öffnen?*
@@ -36,4 +36,4 @@ Wenn der Wekrzeugkasten nicht in der Toolbar zu finden ist (siehe Abbildung 1), 
 *Abbildung 2*
 
 ## Georeferenzieren
-Allgemeine Fehlerhinweise zum [Georeferenzieren](/exercise_4/qgis-Georeferenzierung.md#allgemeine-fehlerhinweise) finden sich unter dem Haupteintrag zu diesem Thema.
+Allgemeine Fehlerhinweise zum [Georeferenzieren](/content/gis/06_georef-digitalize/qgis-Georeferenzierung.md#allgemeine-fehlerhinweise) finden sich unter dem Haupteintrag zu diesem Thema.

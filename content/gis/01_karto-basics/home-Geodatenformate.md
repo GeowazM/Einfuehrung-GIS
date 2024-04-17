@@ -1,10 +1,5 @@
 # Geodatenformate
-Auf dieser Seite werden die für dieses Tutorium wichtigsten Geodatenformate behandelt, um einen allgemeinen Überblick für die Teilnehmenden zu schaffen. Dabei werden folgende Themen angesprochen:
-- [Unterschiede bei der Arbeit mit Raster- und Vektordaten](#unterschiede-bei-der-arbeit-mit-raster-und-vektordaten)
-- [verschiedene Vektordatenformate](#vektordatenformate) (Shapefiles und GeoJSON)
-- [Rasterdatenformate](#rasterdatenformate) (GeoTiff)
-- [Datenformate für Raster- und Vektordaten](#geopackage) (Geopackage), und
-- [Web Map Service (WMS)](#web-map-service-wms)
+Auf dieser Seite werden die für dieses Tutorium wichtigsten Geodatenformate behandelt, um einen allgemeinen Überblick für die Teilnehmenden zu schaffen.
 
 # Unterschiede bei der Arbeit mit Rasterdaten und Vektordaten
 Tools für Vektordaten **sind nicht** für die Verarbeitung von Rasterdaten geeignet, und umgekehrt.
@@ -52,6 +47,6 @@ Herunterladen werden können leere Geopackages zum Weiterverarbeiten unter folge
 
 # Web Map Service (WMS)
 
-**W**eb **M**ap **S**ervices (WMS) erlauben es euch, Geodaten aus dem Web mit eurem GIS zu verknüpfen und abzurufen. Als Ergebnis wird euch dabei dann ein georeferenziertes Kartenbild angezeigt. Dieses Prinzip wird beispielsweise auch bei [Basemaps](/exercise_4/qgis-Basemaps.md) angewendet. Im zugehörigen Wikibeitrag finden sich Informationen darüber, wie sich WMS Daten in QGIS hereinladen lassen, und welche Funktionen genutzt werden können.
+**W**eb **M**ap **S**ervices (WMS) erlauben es euch, Geodaten aus dem Web mit eurem GIS zu verknüpfen und abzurufen. Als Ergebnis wird euch dabei dann ein georeferenziertes Kartenbild angezeigt. Dieses Prinzip wird beispielsweise auch bei [Basemaps](/content/gis/06_georef-digitalize/qgis-Basemaps.md) angewendet. Im zugehörigen Wikibeitrag finden sich Informationen darüber, wie sich WMS Daten in QGIS hereinladen lassen, und welche Funktionen genutzt werden können.
 
 *Further Resources:* Weitere Informationen zu WMS finden sich auch unter: https://www.ogc.org/standards/wms.
