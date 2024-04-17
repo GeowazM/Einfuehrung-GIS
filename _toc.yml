@@ -15,15 +15,15 @@ parts:
       - file: content/gis/allgemeines/Geoformate
   - caption: Grundlagen der Kartographie
     chapters:
-      - file: content/gis/01_karto-basics/home-Grundlegende_Einstellungen
-      - file: content/gis/01_karto-basics/arbeiten_mit_qgis/qgis-Interface
-      - file: content/gis/01_karto-basics/arbeiten_mit_qgis/home-Datenorganisation
-      - file: content/gis/01_karto-basics/arbeiten_mit_qgis/home-Geodatenformate
-      - file: content/gis/01_karto-basics/daten_in_qgis/qgis-Attributdaten
-      - file: content/gis/01_karto-basics/daten_in_qgis/qgis-Layer-Konzept
-      - file: content/gis/01_karto-basics/daten_in_qgis/qgis-Projektionen
-      - file: content/gis/01_karto-basics/visualisierung/qgis-Kartengestaltung
-      - file: content/gis/01_karto-basics/visualisierung/qgis-Vektorsignaturen
+      - file: content/gis/01_karto-basics/home-Grundlegende-Einstellungen
+      - file: content/gis/01_karto-basics/qgis-Interface
+      - file: content/gis/01_karto-basics/home-Datenorganisation
+      - file: content/gis/01_karto-basics//home-Geodatenformate
+      - file: content/gis/01_karto-basicsqgis-Attributdaten
+      - file: content/gis/01_karto-basics/qgis-Layer-Konzept
+      - file: content/gis/01_karto-basics/qgis-Projektionen
+      - file: content/gis/01_karto-basics/qgis-Kartengestaltung
+      - file: content/gis/01_karto-basics/qgis-Vektorsignaturen
       - file: content/gis/01_karto-basics/readme
 
   - caption: Grundlage der Arbeit mit Vektordaten
