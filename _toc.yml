@@ -15,60 +15,60 @@ parts:
       - file: content/gis/allgemeines/Geoformate
   - caption: Grundlagen der Kartographie
     chapters:
-      - file: content/gis/exercise_1/arbeiten_mit_qgis/home-Grundlegende_Einstellungen
-      - file: content/gis/exercise_1/arbeiten_mit_qgis/qgis-Interface
-      - file: content/gis/exercise_1/arbeiten_mit_qgis/home-Datenorganisation
-      - file: content/gis/exercise_1/arbeiten_mit_qgis/home-Geodatenformate
-      - file: content/gis/exercise_1/daten_in_qgis/qgis-Attributdaten
-      - file: content/gis/exercise_1/daten_in_qgis/qgis-Layer-Konzept
-      - file: content/gis/exercise_1/daten_in_qgis/qgis-Projektionen
-      - file: content/gis/exercise_1/visualisierung/qgis-Kartengestaltung
-      - file: content/gis/exercise_1/visualisierung/qgis-Vektorsignaturen
-      - file: content/gis/exercise_1/readme
+      - file: content/gis/01_karto-basics/home-Grundlegende_Einstellungen
+      - file: content/gis/01_karto-basics/arbeiten_mit_qgis/qgis-Interface
+      - file: content/gis/01_karto-basics/arbeiten_mit_qgis/home-Datenorganisation
+      - file: content/gis/01_karto-basics/arbeiten_mit_qgis/home-Geodatenformate
+      - file: content/gis/01_karto-basics/daten_in_qgis/qgis-Attributdaten
+      - file: content/gis/01_karto-basics/daten_in_qgis/qgis-Layer-Konzept
+      - file: content/gis/01_karto-basics/daten_in_qgis/qgis-Projektionen
+      - file: content/gis/01_karto-basics/visualisierung/qgis-Kartengestaltung
+      - file: content/gis/01_karto-basics/visualisierung/qgis-Vektorsignaturen
+      - file: content/gis/01_karto-basics/readme
 
   - caption: Grundlage der Arbeit mit Vektordaten
     chapters:
-      - file: content/gis/exercise_2/qgis-Nicht-Räumliche-Abfragen
-      - file: content/gis/exercise_2/qgis-Räumliche-Abfragen
-      - file: content/gis/exercise_2/qgis-Geometrieoperationen
-      - file: content/gis/exercise_2/readme
+      - file: content/gis/02_vector-basics/qgis-Nicht-Räumliche-Abfragen
+      - file: content/gis/02_vector-basics/qgis-Räumliche-Abfragen
+      - file: content/gis/02_vector-basics/qgis-Geometrieoperationen
+      - file: content/gis/02_vector-basics/readme
   - caption: Forgeschrittene Arbeit mit Vektordaten
     chapters:
-      - file: content/gis/exercise_3/qgis-Räumliche-Verschneidungen
-      - file: content/gis/exercise_3/qgis-Nicht-Räumliche-Joins
-      - file: content/gis/exercise_3/qgis-Räumliche-Joins
-      - file: content/gis/exercise_3/qgis-Tabellenfunktionen
-      - file: content/gis/exercise_3/readme
+      - file: content/gis/03_vector-advanced/qgis-Räumliche-Verschneidungen
+      - file: content/gis/03_vector-advanced/qgis-Nicht-Räumliche-Joins
+      - file: content/gis/03_vector-advanced/qgis-Räumliche-Joins
+      - file: content/gis/03_vector-advanced/qgis-Tabellenfunktionen
+      - file: content/gis/03_vector-advanced/readme
   - caption: Grundlagen der Arbeit mit Rasterdaten
     chapters:
-      - file: content/gis/exercise_6/qgis-Raster-oeffnen
-      - file: content/gis/exercise_6/qgis-Rasterdarstellung
-      - file: content/gis/exercise_6/qgis-Konvertierung
-      - file: content/gis/exercise_6/qgis-Globale-Funktionen
-      - file: content/gis/exercise_6/qgis-Lokale-Funktionen
-      - file: content/gis/exercise_6/readme
+      - file: content/gis/04_raster-basics/qgis-Raster-oeffnen
+      - file: content/gis/04_raster-basics/qgis-Rasterdarstellung
+      - file: content/gis/04_raster-basics/qgis-Konvertierung
+      - file: content/gis/04_raster-basics/qgis-Globale-Funktionen
+      - file: content/gis/04_raster-basics/qgis-Lokale-Funktionen
+      - file: content/gis/04_raster-basics/readme
   - caption: Fortgeschrittene Arbeit mit Rasterdaten
     chapters:
-      - file: content/gis/exercise_7/qgis-Fokale-Funktionen
-      - file: content/gis/exercise_7/qgis-Zonale-Funktionen
-      - file: content/gis/exercise_7/qgis-Weitere-Rasterfunktionen
-      - file: content/gis/exercise_7/readme
+      - file: content/gis/05_raster-advanced/qgis-Fokale-Funktionen
+      - file: content/gis/05_raster-advanced/qgis-Zonale-Funktionen
+      - file: content/gis/05_raster-advanced/qgis-Weitere-Rasterfunktionen
+      - file: content/gis/05_raster-advanced/readme
   - caption: Digitalisierung und Georeferenzierung
     chapters:
-      - file: content/gis/exercise_4/qgis-Basemaps
-      - file: content/gis/exercise_4/qgis-Digitalisierung
-      - file: content/gis/exercise_4/qgis-Georeferenzierung
-      - file: content/gis/exercise_4/readme
+      - file: content/gis/06_georef-digitalize/qgis-Basemaps
+      - file: content/gis/06_georef-digitalize/qgis-Digitalisierung
+      - file: content/gis/06_georef-digitalize/qgis-Georeferenzierung
+      - file: content/gis/06_georef-digitalize/readme
   - caption: OpenStreetMap-Daten
     chapters:
-      - file: content/gis/exercise_5/home-OSM-Grundlagen
-      - file: content/gis/exercise_5/home-OSM-Daten-herunterladen
-      - file: content/gis/exercise_5/readme
+      - file: content/gis/07_download-osm/home-OSM-Grundlagen
+      - file: content/gis/07_download-osm/home-OSM-Daten-herunterladen
+      - file: content/gis/07_download-osm/readme
   - caption: Interpolation
     chapters:
-      - file: content/gis/exercise_8/qgis-Räumliche-Interpolationsverfahren
-      - file: content/gis/exercise_8/readme
+      - file: content/gis/08_interpolation/qgis-Räumliche-Interpolationsverfahren
+      - file: content/gis/08_interpolation/readme
   - caption: Automatisierung
     chapters:
-      - file: content/gis/exercise_9/qgis-Automatisierung
-      - file: content/gis/exercise_9/readme
+      - file: content/gis/09_model-builder/qgis-Automatisierung
+      - file: content/gis/09_model-builder/readme

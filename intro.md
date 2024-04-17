@@ -1,58 +1,58 @@
 # GIS Einführung
 
 ## Allgemeines
-* [Geodatenbeschaffung](/content/gis/allgemeines/home-Geodatenbeschaffung)
+* [Geodatenbeschaffung](/content/gis/allgemeines/Geodatenbeschaffung)
 * [Installation](/content/gis/allgemeines/qgis-Installation)
 * [Hinweise zur Verwendung von GIS-Software](/content/gis/allgemeines/Hinweise)
 * [Was tun bei Problemen?](/content/gis/allgemeines/home-Probleme)
 * [Häufige Fragen/Fehlerquellen](/content/gisallgemeines/home-Häufige-Fragen-und-Fehlerquellen)
 
 ## Grundlagen der Kartographie
-* [Grundlegende Einstellungen](/content/gis/exercise_1/arbeiten_mit_qgis/home-Grundlegende-Einstellungen)
-* [Benutzeroberfläche anpassen](/content/gis/exercise_1/arbeiten_mit_qgis/qgis-Interface)
-* [Datenorganisation](/content/gis/exercise_1/arbeiten_mit_qgis/home-Datenorganisation)
-* [Geodatenformate](/content/gis/exercise_1/arbeiten_mit_qgis/home-Geodatenformate)
-* [Layer-Konzept kennenlernen](/content/gis/exercise_1/daten_in_qgis/qgis-Layer-Konzept)
-* [Attributdaten einsehen](/content/gis/exercise_1/daten_in_qgis/qgis-Attributdaten)
-* [Vektor-Daten umprojizieren](/content/gis/exercise_1/daten_in_qgis/qgis-Projektionen)
-* [Vektorsignaturen](/content/gis/exercise_1/visualisierung/qgis-Vektorsignaturen)
-* [Kartengestaltung](/content/gis/exercise_1/visualisierung/qgis-Kartengestaltung)
+* [Grundlegende Einstellungen](/content/gis/01_karto-basics/home-Grundlegende-Einstellungen.md)
+* [Benutzeroberfläche anpassen](/content/gis/01_karto-basics/qgis-Interface.md)
+* [Datenorganisation](/content/gis/01_karto-basics/home-Datenorganisation.md)
+* [Geodatenformate](/content/gis/01_karto-basics/home-Geodatenformate.md)
+* [Layer-Konzept kennenlernen](/content/gis/01_karto-basics/qgis-Layer-Konzept.md)
+* [Attributdaten einsehen](/content/gis/01_karto-basics/qgis-Attributdaten.md)
+* [Vektor-Daten umprojizieren](/content/gis/01_karto-basics/qgis-Projektionen.md)
+* [Vektorsignaturen](/content/gis/01_karto-basics/qgis-Vektorsignaturen.md)
+* [Kartengestaltung](/content/gis/01_karto-basics/qgis-Kartengestaltung.md)
 
 ## Grundlage der Arbeit mit Vektordaten
-* [Nicht-räumliche Abfragen](/content/gis/exercise_2/qgis-Nicht-Räumliche-Abfragen)
-* [Räumliche Abfragen](/content/gis/exercise_2/qgis-Räumliche-Abfragen)
-* [Geometrieoperationen](/content/gis/exercise_2/qgis-Geometrieoperationen)
+* [Nicht-räumliche Abfragen](/content/gis/02_vector-basics/qgis-Nicht-Räumliche-Abfragen)
+* [Räumliche Abfragen](/content/gis/02_vector-basics/qgis-Räumliche-Abfragen)
+* [Geometrieoperationen](/content/gis/02_vector-basics/qgis-Geometrieoperationen)
 
 ## Forgeschrittene Arbeit mit Vektordaten
-* [Vektordaten räumlich verschneiden](/content/gis/exercise_3/qgis-Räumliche-Verschneidungen)
-* [Nicht-Räumliche Joins durchführen](/content/gis/exercise_3/qgis-Nicht-Räumliche-Joins)
-* [Räumliche Joins durchführen](/content/gis/exercise_3/qgis-Räumliche-Joins)
-* [Tabellenfunktionen nutzen](/content/gis/exercise_3/qgis-Tabellenfunktionen)
+* [Vektordaten räumlich verschneiden](/content/gis/03_vector-advanced/qgis-Räumliche-Verschneidungen)
+* [Nicht-Räumliche Joins durchführen](/content/gis/03_vector-advanced/qgis-Nicht-Räumliche-Joins)
+* [Räumliche Joins durchführen](/content/gis/03_vector-advanced/qgis-Räumliche-Joins)
+* [Tabellenfunktionen nutzen](/content/gis/03_vector-advanced/qgis-Tabellenfunktionen)
 
 ## Grundlagen der Arbeit mit Rasterdaten
-* [Rasterdaten im GIS öffnen und kennenlernen](/content/gis/exercise_6/qgis-Raster-oeffnen)
-* [Darstellung von Rasterdaten](/content/gis/exercise_6/qgis-Rasterdarstellung)
-* [Raster/Vektor Konvertierung](/content/gis/exercise_6/qgis-Konvertierung)
-* [Globale Rasteroperationen](/content/gis/exercise_6/qgis-Globale-Funktionen)
-* [Lokale Rasteroperationen](/content/gis/exercise_6/qgis-Lokale-Funktionen)
+* [Rasterdaten im GIS öffnen und kennenlernen](/content/gis/04_raster-basics/qgis-Raster-oeffnen)
+* [Darstellung von Rasterdaten](/content/gis/04_raster-basics/qgis-Rasterdarstellung)
+* [Raster/Vektor Konvertierung](/content/gis/04_raster-basics/qgis-Konvertierung)
+* [Globale Rasteroperationen](/content/gis/04_raster-basics/qgis-Globale-Funktionen)
+* [Lokale Rasteroperationen](/content/gis/04_raster-basics/qgis-Lokale-Funktionen)
 
 ## Fortgeschrittene Arbeit mit Rasterdaten
-* [Fokale Funktionen](/content/gis/exercise_7/qgis-Fokale-Funktionen)
-* [Zonale Funktionen](/content/gis/exercise_7/qgis-Zonale-Funktionen)
-* [Weitere Rasterfunktionen](/content/gis/exercise_7/qgis-Weitere-Rasterfunktionen)
+* [Fokale Funktionen](/content/gis/05_raster-advanced/qgis-Fokale-Funktionen)
+* [Zonale Funktionen](/content/gis/05_raster-advanced/qgis-Zonale-Funktionen)
+* [Weitere Rasterfunktionen](/content/gis/05_raster-advanced/qgis-Weitere-Rasterfunktionen)
 
 ## Digitalisierung und Georeferenzierung
-* [Basemaps](/content/gis/exercise_4/qgis-Basemaps)
-* [Digitalisierung](/content/gis/exercise_4/qgis-Digitalisierung)
-* [Georeferenzierung](/content/gis/exercise_4/qgis-Georeferenzierung)
+* [Basemaps](/content/gis/06_georef-digitalize/qgis-Basemaps)
+* [Digitalisierung](/content/gis/06_georef-digitalize/qgis-Digitalisierung)
+* [Georeferenzierung](/content/gis/06_georef-digitalize/qgis-Georeferenzierung)
 
 ## OpenStreetMap-Daten
-* [OSM Grundlagen](/content/gis/exercise_5/home-OSM-Grundlagen)
-* [OSM Daten herunterladen](/content/gis/exercise_5/home-OSM-Daten-herunterladen)
+* [OSM Grundlagen](/content/gis/07_download-osm/home-OSM-Grundlagen)
+* [OSM Daten herunterladen](/content/gis/07_download-osm/home-OSM-Daten-herunterladen)
 
 ## Interpolation
-* [räumliche Interpolation](/content/gis/exercise_8/qgis-Räumliche-Interpolationsverfahren)
+* [räumliche Interpolation](/content/gis/08_interpolation/qgis-Räumliche-Interpolationsverfahren)
 
 
 ## Automatisierung
-* [Automatisierung](/content/gis/exercise_9/qgis-Automatisierung)
+* [Automatisierung](/content/gis/09_model-builder/qgis-Automatisierung)

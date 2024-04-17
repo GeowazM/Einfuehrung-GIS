@@ -48,7 +48,7 @@ Hier könnt ihr nach Tools und Layer suchen. Wenn ihr nicht wisst, wo ihr ein To
 
 **Hinweis:**  
 Die im Projekt verwendeten Layer-Daten werden nicht in der Projekt-Datei gespeichert. Stattdessen enthält die Projekt-Datei lediglich die Dateipfade, wo sich die Layer-Daten zum Zeitpunkt der letzten Abspeicherung des Projekts auf dem PC befunden haben. Sollte der Speicherort dieser Layer-Daten nachträglich verändert werden, kommt es bei erneuter Öffnung des Projektes zur Fehlermeldung "nicht verfügbare Layer behandeln".
-Eine gute [Datenorganisation](/content/gis/exercise_1/arbeiten_mit_qgis/home-Datenorganisation) mit einer festen und durchdachten Ordnerstruktur verhindert solche Probleme.
+Eine gute [Datenorganisation](/content/gis/01_karto-basics/arbeiten_mit_qgis/home-Datenorganisation) mit einer festen und durchdachten Ordnerstruktur verhindert solche Probleme.
 
 ## Anzeigen ein- und ausblenden
 <video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/qgis-book/-/raw/main/uploads/5b05bfc35c0926253110d15c339e3c2e/Anzeigen_einblenden_ausblenden.mp4"></video>

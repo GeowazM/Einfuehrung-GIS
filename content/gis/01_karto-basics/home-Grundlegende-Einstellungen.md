@@ -1,7 +1,7 @@
 # Grundlegende Einstellungen
 Nach der Installation von QGIS sollten einige Basiseinstellungen verändert werden, um mögliche Fehlerquellen zu vermeiden und die Möglichkeiten der Software vollständig ausschöpfen zu können. Darüber hinaus kann QGIS an die individuellen Vorlieben angepasst werden, um so den Arbeitsprozess zu optimieren.  
 
-* [Automatische Projektions-Wahl deaktivieren](/content/gis/exercise_1/arbeiten_mit_qgis/home-Grundlegende Einstellungen.md#automatische-projektions-wahl-deaktivieren)
+* [Automatische Projektions-Wahl deaktivieren](/content/gis/01_karto-basics/arbeiten_mit_qgis/home-Grundlegende Einstellungen.md#automatische-projektions-wahl-deaktivieren)
 * [Sprache umstellen](/content/gis/allgemeines/home-Grundlegende Einstellungen#sprache-umstellen)
 
 
