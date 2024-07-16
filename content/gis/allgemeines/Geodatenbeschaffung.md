@@ -13,6 +13,8 @@ Hier findet eine unvollständige Liste, wo ihr Geodaten herunterladen könnt.
 | [SRTM Data](http://srtm.csi.cgiar.org/srtmdata/) | SRTM Höhendaten mit 90m Auflösung |
 | [OpenAerialMap](https://openaerialmap.org/) | Luft- und Sattelitenbilder weltweit (z.B. HD mit 46m Auflösung) |
 | [Copernicus & Land Monitoring Service der EU](https://land.copernicus.eu/pan-european) | Hoch aufgelöste, europaweite Rasterdaten zu Besiedelung, Land Cover, Wäldern, uvm. |
+| [Global Human Settlement Layer](https://human-settlement.emergency.copernicus.eu/) | Globale Rasterdaten zu Bevölkerungszahlen, Bebauung, Gebäudehöhen uvm |
+| [Open GeoData BW](https://opengeodata.lgl-bw.de/#/) | Geodatenportal des Landes Baden-Württemberg, u.a. hochaufgelöstes DGM, DTKs, … |
 
 
 ## Deutschland und Europa
