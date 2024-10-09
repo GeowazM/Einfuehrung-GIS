@@ -6,6 +6,49 @@ root: intro
 parts:
   - caption: Allgemeines
     chapters:
+      - file: content/karto/Allgemeines/Installation
+      - file: content/karto/Allgemeines/Hinweise-Arbeiten-mit-GIS
+      - file: content/karto/Allgemeines/Grundlegende-Einstellungen
+      - file: content/karto/Allgemeines/Datenorganisation
+      - file: content/karto/Allgemeines/Was-tun-bei-Problemen
+      - file: content/karto/Allgemeines/FAQ
+
+  - caption: Benutzeroberfläche/GUI
+    chapters:
+      - file: content/karto/benutzeroberfläche/GUI
+
+  - caption: Daten laden
+    chapters:
+      - file: content/karto/Daten_laden/Daten
+
+  - caption: Das Layerkonzept
+    chapters:
+      - file: content/karto/layerkonzept/Layer
+
+  - caption: Arbeiten mit Koordinatensystemen
+    chapters:
+      - file: content/karto/koordinatensysteme/Koordinatensystem
+      - file: content/karto/koordinatensysteme/Projection-Wizard
+
+  - caption: Distanzen, Flächen, Winkel messen
+    chapters:
+    - file: content/karto/messen/Messen
+
+  - caption: Kartographische Darstellung eines Layers ändern
+    chapters:
+      - file: content/karto/darstellung/Allgemeines-zur-Darstellung-von-Layern
+      - file: content/karto/darstellung/Einzelsymbol-anpassen
+      - file: content/karto/darstellung/Graphische-Variablen
+      - file: content/karto/darstellung/Beschriftung
+
+  - caption: Kartenblatt erstellen
+    chapters:
+      - file: content/karto/kartenblatt/Kartenblatt-erstellen
+  - caption: Einführung in die Geoinformatik
+    chapters:
+      - file: content/gis/gis_dummy/dummy
+  - caption: Allgemeines
+    chapters:
       - file: content/gis/allgemeines/Geodatenbeschaffung
       - file: content/gis/allgemeines/qgis-Installation
       - file: content/gis/allgemeines/Hinweise
@@ -18,7 +61,7 @@ parts:
       - file: content/gis/01_karto-basics/home-Grundlegende-Einstellungen
       - file: content/gis/01_karto-basics/qgis-Interface
       - file: content/gis/01_karto-basics/home-Datenorganisation
-      - file: content/gis/01_karto-basics//home-Geodatenformate
+      - file: content/gis/01_karto-basics/home-Geodatenformate
       - file: content/gis/01_karto-basicsqgis-Attributdaten
       - file: content/gis/01_karto-basics/qgis-Layer-Konzept
       - file: content/gis/01_karto-basics/qgis-Projektionen

@@ -47,6 +47,6 @@ Herunterladen werden können leere Geopackages zum Weiterverarbeiten unter folge
 
 # Web Map Service (WMS)
 
-**W**eb **M**ap **S**ervices (WMS) erlauben es euch, Geodaten aus dem Web mit eurem GIS zu verknüpfen und abzurufen. Als Ergebnis wird euch dabei dann ein georeferenziertes Kartenbild angezeigt. Dieses Prinzip wird beispielsweise auch bei [Basemaps](/content/gis/06_georef-digitalize/qgis-Basemaps.md) angewendet. Im zugehörigen Wikibeitrag finden sich Informationen darüber, wie sich WMS Daten in QGIS hereinladen lassen, und welche Funktionen genutzt werden können.
+**W**eb **M**ap **S**ervices (WMS) erlauben es euch, Geodaten aus dem Web mit eurem GIS zu verknüpfen und abzurufen. Als Ergebnis wird euch dabei dann ein georeferenziertes Kartenbild angezeigt. Dieses Prinzip wird beispielsweise auch bei [Basemaps](http://giscience.courses-pages.gistools.geog.uni-heidelberg.de/qgis-book//content/gis/06_georef-digitalize/qgis-Basemaps.md) angewendet. Im zugehörigen Wikibeitrag finden sich Informationen darüber, wie sich WMS Daten in QGIS hereinladen lassen, und welche Funktionen genutzt werden können.
 
 *Further Resources:* Weitere Informationen zu WMS finden sich auch unter: https://www.ogc.org/standards/wms.

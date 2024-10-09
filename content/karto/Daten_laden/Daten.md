@@ -25,7 +25,7 @@ Die Abbildung zeigt den entsprechenden Dialog. Nachdem über *Connect* eine Verb
 
 ![Geopackages über Add Layer hinzufügen](https://courses.gistools.geog.uni-heidelberg.de/giscience/kartographie_uebung/-/wikis/uploads/img/geopackagesAddLayer.png)
 
-Komfortabel ist die Möglichkeit, Geopackages über das *Browser*-Panel zu verwalten, das separat aktiviert werden muss (s. [Fenster und Toolbars hinzufügen](GUI)). Hier werden alle verbundenen Geopackages angezeigt und einzelne Datensätze können über Doppelklick oder Drag & Drop als Layer dem Projekt hinzugefügt werden.
+Komfortabel ist die Möglichkeit, Geopackages über das *Browser*-Panel zu verwalten, das separat aktiviert werden muss (s. [Fenster und Toolbars hinzufügen](http://giscience.courses-pages.gistools.geog.uni-heidelberg.de/qgis-book//content/karto/benutzeroberfläche/GUI)). Hier werden alle verbundenen Geopackages angezeigt und einzelne Datensätze können über Doppelklick oder Drag & Drop als Layer dem Projekt hinzugefügt werden.
 ![Geopackages über das Browser Panel laden/verwlaten](https://courses.gistools.geog.uni-heidelberg.de/giscience/kartographie_uebung/-/wikis/uploads/img/geopackageBrowser.png)
 
 <video width="100%" controls src="https://courses.gistools.geog.uni-heidelberg.de/giscience/kartographie_uebung/-/wikis/uploads/videos/QGIS_geopackageLadenAddLayer.mp4"></video>

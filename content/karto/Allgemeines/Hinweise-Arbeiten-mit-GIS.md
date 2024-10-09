@@ -11,7 +11,7 @@ Es wird empfohlen die Sprache von QGIS auf Englisch umzustellen. Dies hat mehrer
 Wie man die Sprache von QGIS umstellt, wird in den [grundlegenden Einstellungen](Grundlegende-Einstellungen) gezeigt.
 
 ## Regelmäßiges Abspeichern
-GIS-Programme sind leider dafür berüchtigt, auch gerne mal einzufrieren oder ganz abzustürzen. Zwar ist ein Trend zu erkennen, dass die Komplikationen mit besserer Hardware weniger werden, trotzdem ist selbst ein "Gaming-PC" für mehrere tausend Euro nicht vollkommen davor sicher. Um möglichst keinen Fortschritt an euren Projekten zu verlieren, wird regelmäßiges Speichern empfohlen (siehe [Projekt speichern und öffnen](/benutzeroberfläche/GUI)). Besonders aufwändigere Tasks mit längeren Berechnungszeiten sind anfällig zu crashen. Daher sollte speziell vor deren Durchführung immer gespeichert werden.
+GIS-Programme sind leider dafür berüchtigt, auch gerne mal einzufrieren oder ganz abzustürzen. Zwar ist ein Trend zu erkennen, dass die Komplikationen mit besserer Hardware weniger werden, trotzdem ist selbst ein "Gaming-PC" für mehrere tausend Euro nicht vollkommen davor sicher. Um möglichst keinen Fortschritt an euren Projekten zu verlieren, wird regelmäßiges Speichern empfohlen (siehe [Projekt speichern und öffnen](http://giscience.courses-pages.gistools.geog.uni-heidelberg.de/qgis-book//content/karto//benutzeroberfläche/GUI)). Besonders aufwändigere Tasks mit längeren Berechnungszeiten sind anfällig zu crashen. Daher sollte speziell vor deren Durchführung immer gespeichert werden.
 
 
 ## Umlaute, Sonderzeichen, Leerzeichen in Dateipfaden 

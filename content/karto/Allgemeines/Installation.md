@@ -2,7 +2,7 @@
 QGIS ist eine Open Source Software und daher frei und ohne Kosten für jeden verfügbar. Ihr könnt QGIS für Windows, Mac und Linux Betriebssysteme installieren. 
 
 
-QGIS gibt es in verschiedenen Versionen. Die beiden für uns wichtigen sind einmal das **Long Term Release (LTR)**, welches die aktuell stabilste Version abbildet und das **Latest Release** welches die aktuellste Version inklusive aller neuen Entwicklungen/Features enthält. Das aktuelle LTR ist **3.22.11 'Białowieża'**. Das aktuelle Latest Release ist **3.26.3 Buenos Aires**.
+QGIS gibt es in verschiedenen Versionen. Die beiden für uns wichtigen sind einmal das **Long Term Release (LTR)**, welches die aktuell stabilste Version abbildet und das **Latest Release** welches die aktuellste Version inklusive aller neuen Entwicklungen/Features enthält. Das aktuelle LTR ist **3.34.11 Prizren**. Das aktuelle Latest Release ist **3.38.3 Grenoble**.
 
 
 Hier findet ihr alle Versionen zum Download:
